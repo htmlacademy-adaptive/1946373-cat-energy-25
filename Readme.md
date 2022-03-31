@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алиса Щурова](https://up.htmlacademy.ru/adaptive/25/user/1946373).
-* Наставник: `[Arthur Litovko](https://github.com/baileys-li)`.
+* Наставник: [Arthur Litovko](https://github.com/baileys-li).
 
 ---
 
