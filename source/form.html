@@ -13,7 +13,7 @@
         <img src="img/logo-mobile2.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
       <button class="main-header__toggle menu-toggle" type="button">
-        <svg class="toggle__icon" width="24" height="18" role="img" aria-labelledby="logo-menu" focusable="false"
+        <svg class="main-header__toggle-icon" width="24" height="18" role="img" aria-labelledby="logo-menu" focusable="false"
         fill="currentColor">
         <title id="logo-menu">Открыть меню</title>
         <use href="sprite.svg#logo-menu"></use>
@@ -26,12 +26,12 @@
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item smain-nav__item--current">
+            <li class="main-nav__item main-nav__item--current">
               <a>
                 Подбор программы
               </a>
@@ -44,42 +44,43 @@
       <h1 class="main-form__check-program">Подбор программы</h1>
       <p class="main-form__info">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
-      <form action="https://htmlacademy.ru/" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden">Общая инфоррмация</label>
         <fieldset class="catalog-filter-form">
-        <ul class="catalog-form__filter-list">
-          <li class="catalog-form__filter-item">
+        <ul class="catalog-filter-form__filter-list">
+          <li class="catalog-filter-form__filter-item">
             <label for="name">Имя:*
-            <input type="text" id="name" name="user_name" value="Барсик"></label>
+            <input type="text" id="name" name="user_name" placeholder="Барсик" required></label>
           </li>
-          <li class="catalog-form__filter-item">
+          <li class="catalog-filter-form__filter-item">
             <label for="weight">Вес (кг):*
-            <input type="text" id="weight" name="user_weight" value="7"></label>
+            <input type="number" id="weight" name="user_weight" placeholder="7" required></label>
           </li>
-          <li class="catalog-form__filter-item">
+          <li class="catalog-filter-form__filter-item">
             <label for="age">Возраст (лет):
-            <input type="text" id="age" name="user_age" value="7"></label>
+            <input type="number" id="age" name="user_age" placeholder="7"></label>
           </li>
         </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter__title visually-hidden"> Цель</legend>
-        <ul class="catalog-filter__list">
-          <li class="catalog-filter__item">
+        <legend class="visually-hidden">Цель</legend>
+        <ul class="catalog-filter-group__list">
+          <li class="catalog-filter-group__item">
             <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="lost-weight" checked>
+              <input class="control__input visually-hidden" type="radio" name="aim" value="Похудение" checked>
               <span class="control__label">Похудение</span>
             </label>
           </li>
-          <li class="catalog-filter__item">
+          <li class="catalog-filter-group__item">
             <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="mass-gain">
+              <input class="control__input visually-hidden" type="radio" name="aim" value="Набор массы">
               <span class="control__label">Набор массы</span>
             </label>
           </li>
-          <li class="catalog-filter__item">
+          <li class="catalog-filter-group__item">
             <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="need-advice">
+              <input class="control__input visually-hidden" type="radio" name="aim" value="Не знаю (Нужен ваш совет)">
               <span class="control__label">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
@@ -87,22 +88,22 @@
         </fieldset>
 
         <fieldset class="catalog-filter-contacts">
-          <legend class="catalog-contacts__title "> Контактные данные
+          <legend class="catalog-filter-contacts__title "> Контактные данные
             (владельца кота)</legend>
-            <ul class="catalog-form__filter-list">
-              <li class="catalog-form__filter-item">
+            <ul class="catalog-filter-contacts__filter-list">
+              <li class="catalog-filter-contacts__filter-item">
                 <label for="email">E-mail:*
-                <input type="text" id="email" name="user_mail" value="kuklachev@gmail.com"></label>
+                <input type="email" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
               </li>
-              <li class="catalog-form__filter-item">
+              <li class="catalog-filter-contacts__filter-item">
                 <label for="phone-number">Телефон:*
-                <input type="text" id="phone-number" name="user_phone" value="8 (960) 900-60-90"></label>
+                <input type="tel" id="phone-number" name="user_phone" value="8 (960) 900-60-90" required></label>
               </li>
             </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-comments">
-          <legend class="catalog-comments__title " for="comments">Комментарий</legend>
+          <label class="catalog-filter-comments__title " for="comments">Комментарий</label>
           <input type="text" id="comments" name="tell-about-cat" value="Расскажите обо всех повадках кота">
         </fieldset>
 
@@ -139,7 +140,7 @@
           <div class="catalog-filter-button">
             <button class="catalog-filter-button__cost button" type="submit">отправить заявку</button>
           </div>
-          <p class="catalog-filter__explanation"> * — Обязательные поля</p>
+          <p class="catalog-filter-explanation"> * — Обязательные поля</p>
       </form>
     </main>
     <section class="cooperation">
@@ -178,10 +179,10 @@
           <use href="sprite.svg#telegram"></use>
           </svg>
         </a>
-        <div>
-          <a class="social-item_link" href="https://htmlacademy.ru/">HTML Academy</a>
-          <a class="social-item_link" href="https://htmlacademy.ru/">
-            <svg class="social-item__icon" width="27" height="34" role="img" aria-labelledby="htmlacademy" focusable="false"
+        <div class="social-list__prodact">
+          <a class="social-list__prodact__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="social-list__prodact__link" href="https://htmlacademy.ru/">
+            <svg class="social-list__prodact__icon" width="27" height="34" role="img" aria-labelledby="htmlacademy" focusable="false"
             fill="currentColor">
             <title id="htmlacademy">HTML Academy</title>
             <use href="sprite.svg#htmlacademy-logo"></use>
