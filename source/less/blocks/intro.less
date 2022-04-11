@@ -1,0 +1,56 @@
+@height: 302px;
+@white: #ffffff;
+
+.intro {
+  display: block;
+  background-position: center;
+  background-image: linear-gradient(to bottom, fade(@accent, 85%) @height, #ffffff @height), url("../img/index-background-wrapper.jpg");
+  background-repeat: no-repeat;
+  background-color: #cd853f;
+  background-size: 100%;
+  color: #ffffff;
+}
+
+.intro__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 27px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+
+.intro__subtitle {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 60px;  //это временное решение, text-align: center; не сработал//
+}
+
+.intro__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__cta {
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: @white;
+  padding: 8px 44px;
+  background: hsl(97, 53%, 47%);
+  display: block;  //тоже не поняла как центрировать именно текст, через паддинг глуповато//
+  margin: 0 20px;
+  text-align: center;
+}
