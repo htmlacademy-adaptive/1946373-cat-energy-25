@@ -1,0 +1,95 @@
+.main-catalog {
+  padding: 25px 20px;
+  padding-top: 27px;
+  padding-right: 18px;
+}
+
+.main-catalog__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-catalog__product-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-catalog__product-card {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 141px;
+}
+
+.main-catalog__product {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  font-family: @main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.main-catalog__table {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.main-catalog__feed {
+  font-family: @accent-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: @arial;
+}
+
+.main-catalog__button {
+  grid-column: 1 / -1;
+}
+
+.main-catalog__more-food {
+  display: grid;
+  justify-items: center;
+}
+
+.main-catalog__more-plus {
+  background-image: url("../../img/plus.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
+.main-catalog__more-products {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  padding-top: 23px;
+}
+
+.main-catalog__more-products-discription {
+  font-family: @accent-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: @arial;
+  padding-top: 8px;
+}
+
+.main-catalog__more-products-button {
+  display: inline-block;
+  width: 80%;
+}
+
