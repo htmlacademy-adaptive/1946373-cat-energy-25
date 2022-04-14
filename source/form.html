@@ -2,11 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
+      <div class="main-header__info">
       <a class="main-header__logo">
         <img src="img/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи">
       </a>
@@ -20,6 +23,7 @@
         <use href="sprite.svg#logo-menu"></use>
         </svg>
       </button>
+      </div>
       <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -50,16 +54,16 @@
         <fieldset class="catalog-filter-form">
         <ul class="catalog-filter-form__filter-list">
           <li class="catalog-filter-form__filter-item">
-            <label for="name">Имя:*
-            <input type="text" id="name" name="user_name" placeholder="Барсик" required></label>
+            <label class="catalog-filter-form__counter" for="name">Имя:*
+            <input class="catalog-filter-form__meaning" type="text" id="name" name="user_name" placeholder="Барсик" required></label>
           </li>
           <li class="catalog-filter-form__filter-item">
-            <label for="weight">Вес (кг):*
-            <input type="number" id="weight" name="user_weight" placeholder="7" required></label>
+            <label class="catalog-filter-form__counter" for="weight">Вес (кг):*
+            <input class="catalog-filter-form__meaning meaning-weight" type="number" id="weight" name="user_weight" placeholder="7" required></label>
           </li>
           <li class="catalog-filter-form__filter-item">
-            <label for="age">Возраст (лет):
-            <input type="number" id="age" name="user_age" placeholder="7"></label>
+            <label class="catalog-filter-form__counter" for="age">Возраст (лет):
+            <input class="catalog-filter-form__meaning meaning-age" type="number" id="age" name="user_age" placeholder="7"></label>
           </li>
         </ul>
         </fieldset>
@@ -89,27 +93,27 @@
         </fieldset>
 
         <fieldset class="catalog-filter-contacts">
-          <legend class="catalog-filter-contacts__title "> Контактные данные
+          <legend class="catalog-filter-contacts__title"> Контактные данные
             (владельца кота)</legend>
             <ul class="catalog-filter-contacts__filter-list">
               <li class="catalog-filter-contacts__filter-item">
-                <label for="email">E-mail:*
-                <input type="email" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
+                <label class="email" for="email">E-mail:*
+                <input class="email__input" type="email__input" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
               </li>
               <li class="catalog-filter-contacts__filter-item">
-                <label for="phone-number">Телефон:*
-                <input type="tel" id="phone-number" name="user_phone" value="8 (960) 900-60-90" required></label>
+                <label class="tel" for="phone-number__input">Телефон:*
+                <input class="phone-number__input" type="tel" id="phone-number" name="user_phone" value="8 (960) 900-60-90" required></label>
               </li>
             </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-comments">
-          <label class="catalog-filter-comments__title " for="comments">Комментарий</label>
-          <input type="text" id="comments" name="tell-about-cat" value="Расскажите обо всех повадках кота">
+          <label class="catalog-filter-comments__title" for="comments">Комментарий</label>
+          <input class="catalog-filter-comments__text" type="text" id="comments" name="tell-about-cat" value="Расскажите обо всех повадках кота">
         </fieldset>
 
         <fieldset class="catalog-filter-more">
-          <legend class="catalog-filter-more__title visually-hidden"> Дополнительно</legend>
+          <legend class="catalog-filter-more__title"> Дополнительно</legend>
           <ul class="catalog-filter-more__list">
             <li class="catalog-filter-more__item">
               <label class="control">
