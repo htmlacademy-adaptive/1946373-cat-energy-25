@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .product-by {
   display: flex;
   justify-content: space-between;
@@ -5,10 +8,22 @@
 }
 
 .product-by__link {
-  font-family: 'Arial';
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: @arial;
+}
+
+@media (min-width: @tablet-width) {
+  .product-by {
+    gap: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-by {
+    gap: 22px;
+  }
 }

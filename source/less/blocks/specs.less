@@ -1,6 +1,28 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .specs {
   margin: 0;
   padding-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
+}
+
+@media (min-width: @tablet-width) {
+  .specs {
+    margin: 0;
+    padding-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .specs {
+    margin: 0;
+    padding-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column: 1 / 2;
+  }
 }
