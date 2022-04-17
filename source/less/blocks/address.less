@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .address {
   display: grid;
   grid-template-columns: repeat(2, 139px);
@@ -21,4 +24,41 @@
   font-size: 14px;
   line-height: 20px;
   color: @arial;
+}
+
+
+@media (min-width: @tablet-width) {
+  .address {
+    display: grid;
+    grid-template-columns: repeat(2, 139px);
+    margin: 56px 70px;
+    margin-bottom: 56px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .address__welcome {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .address__actual-address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    position: absolute;
+    background: @white;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 139px);
+    margin-top: 95px;
+    margin-left: 110px;
+    align-items: center;
+    gap: 87px;
+    justify-content: inherit;
+  }
 }

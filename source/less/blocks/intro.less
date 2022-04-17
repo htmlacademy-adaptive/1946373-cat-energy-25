@@ -1,9 +1,10 @@
 @height: 302px;
-
+@tablet-width: 768px;
+@desktop-width: 1440px;
 
 .intro {
   display: block;
-  background-position: center;
+  background-position: top center;
   background-image: linear-gradient(to bottom, fade(@accent, 85%) @height, #ffffff @height), url("../img/index-background-wrapper.jpg");
   background-repeat: no-repeat;
   background-color: #cd853f;
@@ -44,15 +45,50 @@
 
 
 .intro__cta {
-  font-style: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: @white;
-  padding: 8px 44px;
-  background: hsl(97, 53%, 47%);
-  display: block;
   margin: 0 20px;
-  text-align: center;
 }
 
+@media (min-width: @desktop-width) {
+  .intro {
+    display: grid;
+    justify-items: start;
+    background-position: top center;
+    background-image: linear-gradient(to bottom, fade(@accent, 85%) @height, #ffffff @height), url("../img/index-background-wrapper.jpg");
+    background-repeat: no-repeat;
+    background-color: #cd853f;
+    background-size: 100%;
+    color: #ffffff;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 27px;
+    padding-left: 190px;
+    padding-bottom: 40px;
+    margin: 0;
+    color: @black;
+  }
+
+  .intro__image {
+    background-position: top right;
+  }
+
+  .intro__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+  }
+
+  .intro__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .intro__cta {
+    margin: 0 20px;
+}
+}
+//пропустила этот блок//

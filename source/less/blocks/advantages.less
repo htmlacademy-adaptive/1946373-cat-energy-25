@@ -1,6 +1,8 @@
 @grey: #F2F2F2;
 @black:#000000;
 @arial: #444444;
+@tablet-width: 768px;
+@desktop-width: 1440px;
 
 .advantages__title {
   font-style: normal;
@@ -22,11 +24,75 @@
   align-items: center;
 }
 
-.advantage__description{
-  font-family: 'Arial';
+.advantage__description {
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @arial;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    padding: 0;
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 154px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .advantage {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .advantage__image {
+    grid-column: 1 / -1;
+  }
+
+  .advantage__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .advantages__list {
+    padding: 0;
+    margin-top: 42px;
+  }
+
+  .advantage {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .advantage__description {
+    font-family: @accent-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: @arial;
+  }
 }

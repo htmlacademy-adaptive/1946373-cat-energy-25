@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .program-card {
   background-color: @grey;
   padding-left: 20px;
@@ -37,4 +40,80 @@
   color: @black;
   display: block;
   padding-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-card {
+    padding-left: 52px;
+    margin-bottom: 45px;
+  }
+
+  .program-card__title {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .program-card__image {
+    order: 2;
+  }
+
+  .program-slogan {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-card__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program-card__button {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 57px;
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-programs {
+    display: flex;
+    gap: 80px;
+    flex-wrap: nowrap;
+  }
+
+  .program-card {
+    padding-left: 52px;
+    margin-bottom: 45px;
+  }
+
+  .program-card__title {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 47px;
+    align-items: center;
+  }
+
+  .program-card__image {
+    order: 0;
+  }
+
+  .program-slogan {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-card__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program-card__button {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 59px;
+    padding-top: 27px;
+  }
 }
