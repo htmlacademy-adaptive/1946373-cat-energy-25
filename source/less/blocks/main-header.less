@@ -34,7 +34,8 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
-    padding: 10px 20px;
+    padding: 0 30px;
+    padding-top: 42px;
     display: flex;
     flex-wrap: nowrap;
     gap: 93px;
@@ -70,13 +71,23 @@
 @media (min-width: @desktop-width) {
   .main-header {
     padding: 55px 110px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: nowrap;
     gap: 538px;
   }
 
+  .main-header__index {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+  }
+
   .main-header__info {
     gap: 14px;
+  }
+
+  .main-nav__item--current {
+    color: @white;
   }
 }

@@ -1,5 +1,16 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .additional {
   padding-top: 25px;
+}
+
+.additional__title--main {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .additional__title {
@@ -19,4 +30,27 @@
   font-size: 14px;
   line-height: 14px;
   color: @arial;
+}
+
+@media (min-width: @tablet-width) {
+  .additional {
+    padding-top: 0;
+    padding-bottom: 104px;
+  }
+
+  .additional__title--main {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__table-characteristics,
+  .additional__table-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

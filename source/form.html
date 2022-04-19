@@ -27,17 +27,17 @@
       <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">
+              <a class="main-nav__item--current" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__item--current" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a>
+              <a class="main-nav__item--current acrive">
                 Подбор программы
               </a>
             </li>
@@ -55,7 +55,7 @@
         <ul class="catalog-filter-form__filter-list">
           <li class="catalog-filter-form__filter-item">
             <label class="catalog-filter-form__counter" for="name">Имя:*
-            <input class="catalog-filter-form__meaning" type="text" id="name" name="user_name" placeholder="Барсик" required></label>
+            <input class="catalog-filter-form__meaning meaning-name" type="text" id="name" name="user_name" placeholder="Барсик" required></label>
           </li>
           <li class="catalog-filter-form__filter-item">
             <label class="catalog-filter-form__counter" for="weight">Вес (кг):*
@@ -69,7 +69,7 @@
         </fieldset>
 
         <fieldset class="catalog-filter-group">
-        <legend class="visually-hidden">Цель</legend>
+        <label class="visually-hidden">Цель</label>
         <ul class="catalog-filter-group__list">
           <li class="catalog-filter-group__item">
             <label class="control">
@@ -93,8 +93,8 @@
         </fieldset>
 
         <fieldset class="catalog-filter-contacts">
-          <legend class="catalog-filter-contacts__title"> Контактные данные
-            (владельца кота)</legend>
+          <label class="catalog-filter-contacts__title"> Контактные данные
+            (владельца кота)</label>
             <ul class="catalog-filter-contacts__filter-list">
               <li class="catalog-filter-contacts__filter-item">
                 <label class="email" for="email">E-mail:*
@@ -109,11 +109,11 @@
 
         <fieldset class="catalog-filter-comments">
           <label class="catalog-filter-comments__title" for="comments">Комментарий</label>
-          <input class="catalog-filter-comments__text" type="text" id="comments" name="tell-about-cat" value="Расскажите обо всех повадках кота">
+          <textarea class="catalog-filter-comments__text" type="text" id="comments" name="tell-about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="catalog-filter-more">
-          <legend class="catalog-filter-more__title"> Дополнительно</legend>
+          <label class="catalog-filter-more__title"> Дополнительно</label>
           <ul class="catalog-filter-more__list">
             <li class="catalog-filter-more__item">
               <label class="control">
@@ -144,12 +144,12 @@
 
           <div class="catalog-filter-button">
             <button class="catalog-filter-button__cost button" type="submit">отправить заявку</button>
+            <p class="catalog-filter-explanation"> * — Обязательные поля</p>
           </div>
-          <p class="catalog-filter-explanation"> * — Обязательные поля</p>
       </form>
     </main>
     <section class="cooperation">
-      <address class="address">
+      <address class="address add-secondary">
         <strong class="address__welcome">приглашаем к сотрудничеству дилеров!</strong>
         <p class="address__actual-address">ул. Большая
         Конюшенная, д. 19/8

@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .main-catalog {
   padding: 25px 20px;
   padding-top: 27px;
@@ -63,7 +66,7 @@
 }
 
 .main-catalog__more-plus {
-  background-image: url("../../img/plus.svg");
+  background-image: url("../img/plus.svg");
   background-size: 30px 30px;
   background-repeat: no-repeat;
 }
@@ -91,5 +94,133 @@
 .main-catalog__more-products-button {
   display: inline-block;
   width: 80%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    padding: 75px 30px;
+    padding-bottom: 68px;
+  }
+
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 90px;
+  }
+
+  .main-catalog__product-list {
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-catalog__product-card {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 141px;
+    background: #F2F2F2;
+  }
+
+  .main-catalog__product {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-catalog__table {
+  }
+
+  .main-catalog__feed {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .main-catalog__button {
+  }
+
+  .main-catalog__more-food {
+
+  }
+
+  .main-catalog__more-plus {
+  }
+
+  .main-catalog__more-products {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .main-catalog__more-products-discription {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 23px;
+  }
+
+  .main-catalog__more-products-button {
+    font-size: 16px;
+    line-height: 0px;
+    margin-top: 107px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    padding: 90px 110px;
+    padding-bottom: 75px;
+  }
+
+  .main-catalog__title {
+    padding-bottom: 85px;
+  }
+
+  .main-catalog__product-list {
+    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .main-catalog__product-card {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 141px;
+    background: #F2F2F2;
+  }
+
+  .main-catalog__product {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-catalog__table {
+  }
+
+  .main-catalog__feed {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .main-catalog__button {
+  }
+
+  .main-catalog__more-food {
+
+  }
+
+  .main-catalog__more-plus {
+  }
+
+  .main-catalog__more-products {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .main-catalog__more-products-discription {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 23px;
+  }
+
+  .main-catalog__more-products-button {
+    font-size: 16px;
+    line-height: 0px;
+    padding-top: 107px;
+  }
 }
 
