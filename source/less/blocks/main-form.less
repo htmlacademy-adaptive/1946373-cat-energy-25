@@ -91,6 +91,37 @@
   padding-bottom: 25px;
 }
 
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  border: 1px solid #CDCDCD;
+  position: absolute;
+  top: -2px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  outline: none;
+  border-radius: 50%;
+}
+
+.control-mark:active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 13px;
+  height: 13px;
+  background-color: #68B738;
+  border-radius: 50%;
+  content: "";
+}
+
 .control__label {
   font-family: @main-font;
   font-style: normal;
@@ -99,6 +130,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @title;
+  padding-left: 35px;
 }
 
 .catalog-filter-contacts__title {
