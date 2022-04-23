@@ -5,6 +5,8 @@
   background-color: #ffffff;
   padding: 10px 20px;
   display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .main-header__info {
@@ -72,22 +74,17 @@
   .main-header {
     padding: 55px 110px;
     padding-bottom: 0;
-    display: flex;
-    flex-wrap: nowrap;
     gap: 538px;
   }
 
-  .main-header__index {
+  .main-header--active {
     position: absolute;
     z-index: 3;
     background-color: transparent;
+    color: @black;
   }
 
   .main-header__info {
     gap: 14px;
-  }
-
-  .main-nav__item--current {
-    color: @white;
   }
 }

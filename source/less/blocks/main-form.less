@@ -52,7 +52,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @arial;
-  padding-right: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  align-content: center;
+  gap: 14px;
 }
 
 .meaning-weight,
@@ -79,6 +83,12 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 28px;
+  margin-top: 24px;
+}
+
+.catalog-filter-group__item {
+  padding-bottom: 25px;
 }
 
 .control__label {
@@ -113,6 +123,16 @@
   padding: 0;
   margin: 0;
   padding-top: 48px;
+}
+
+.catalog-filter-contacts__filter-item {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: auto 1fr;
+}
+
+.catalog-filter-contacts__filter-item:first-child {
+  padding-bottom: 14px;
 }
 
 .email,
@@ -176,7 +196,7 @@
   text-transform: uppercase;
   color: @arial;
   padding-top: 10px;
-  padding-left: 15px; //как подвинуть надпись наверх?//
+  padding-left: 15px;
 }
 
 .catalog-filter-more {
@@ -186,6 +206,10 @@
 .catalog-filter-more__list {
   list-style-type: none;
   padding-top: 34px;
+}
+
+.catalog-filter-more__item:not(:last-child) {
+  padding-bottom: 25px;
 }
 
 .catalog-filter-explanation {
@@ -256,6 +280,14 @@
     padding: 30px 88px;
     margin-top: 72px;
     margin-bottom: 75px;
+  }
+
+  .catalog-filter-group__list {
+    margin: 0;
+  }
+
+  .catalog-filter-group__item {
+    padding-bottom: 0;
   }
 
   .catalog-filter-group__item:not(:first-child) {
@@ -396,10 +428,8 @@
   }
 
   .catalog-filter-group {
-    border: 1px solid @light-grey;
+    margin: 0;
     padding: 30px 88px;
-    margin-top: 72px;
-    margin-bottom: 75px;
   }
 
   .catalog-filter-group__item:not(:first-child) {
@@ -411,13 +441,23 @@
     line-height: 30px;
   }
 
+  .desktop-container {
+    display: flex;
+    gap: 80px;
+  }
+
+
   .catalog-filter-contacts__title {
     font-size: 36px;
     line-height: 36px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .catalog-filter-contacts__filter-list {
     padding-top: 76px;
+    display: flex;
+    gap: 78px;
   }
 
   .catalog-filter-contacts__filter-item:not(:last-child) {

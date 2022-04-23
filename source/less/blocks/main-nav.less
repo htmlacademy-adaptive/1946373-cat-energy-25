@@ -22,16 +22,16 @@
   padding-bottom: 24px;
 }
 
-.main-nav__item--current {
-  color: @black;
+.main-nav__link {
+  color: inherit;
 }
 
-.main-nav__item--element {
+.main-nav__link--current {
   color: @black;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__item--current {
+  .main-nav__link {
     color: @black;
     font-size: 18px;
     line-height: 24px;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__item--current {
+  .main-nav__link--active {
     color: @white;
   }
 }

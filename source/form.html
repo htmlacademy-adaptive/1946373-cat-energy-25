@@ -8,7 +8,7 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-header__info">
       <a class="main-header__logo">
         <img src="img/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи">
@@ -27,17 +27,17 @@
       <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item--current" href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item--current" href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__item--current acrive">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current acrive" href="#">
                 Подбор программы
               </a>
             </li>
@@ -45,12 +45,13 @@
       </nav>
     </header>
 
-    <main class="main-form">
+    <main class="main-form container">
       <h1 class="main-form__check-program">Подбор программы</h1>
       <p class="main-form__info">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden">Общая инфоррмация</label>
+        <div class="desktop-container">
         <fieldset class="catalog-filter-form">
         <ul class="catalog-filter-form__filter-list">
           <li class="catalog-filter-form__filter-item">
@@ -91,6 +92,7 @@
           </li>
         </ul>
         </fieldset>
+      </div>
 
         <fieldset class="catalog-filter-contacts">
           <label class="catalog-filter-contacts__title"> Контактные данные
