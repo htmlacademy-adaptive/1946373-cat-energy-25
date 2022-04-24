@@ -48,30 +48,23 @@
   margin: 0 20px;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .intro {
     display: grid;
     justify-items: start;
-    background-position: top center;
-    background-image: linear-gradient(to bottom, fade(@accent, 85%) @height, #ffffff @height), url("../img/index-background-wrapper.jpg");
-    background-repeat: no-repeat;
-    background-color: #cd853f;
-    background-size: 100%;
+    background-color: @white;
     color: #ffffff;
+    background-image: none;
   }
 
   .intro__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 27px;
-    padding-left: 190px;
-    padding-bottom: 40px;
+    padding-top: 62px;
+    padding-left: 117px;
+    padding-bottom: 41px;
     margin: 0;
     color: @black;
-  }
-
-  .intro__image {
-    background-position: top right;
   }
 
   .intro__subtitle {
@@ -81,6 +74,7 @@
   }
 
   .intro__image {
+    background-position: top right;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +83,66 @@
 
   .intro__cta {
     margin: 0 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
+
+@media (min-width: @tablet-width) {
+  .intro {
+    position: relative;
+  }
+
+  .intro__cta {
+    position: absolute;
+    bottom: 196px;
+    left: 120px;
+  }
 }
-//пропустила этот блок//
+
+@media (min-width: @desktop-width) {
+  .intro {
+    position: relative;
+    background-position: right;
+    background-image: linear-gradient(to bottom, fade(@accent, 85%) 694px, #ffffff 694px), url("../img/index-background-wrapper.jpg");
+    background-repeat: no-repeat;
+    background-color: @white;
+    background-size: 50%;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 223px;
+    padding-left: 0;
+    padding-bottom: 40px;
+    margin: 0;
+    color: @black;
+    padding-right: 726px;
+  }
+
+  .intro__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+    display: flex;
+    align-items: start;
+    padding-left: 170px;
+  }
+
+  .intro__image {
+    position: absolute;
+    left: 647px;
+    bottom: 0;
+  }
+
+
+  .intro__cta {
+    margin: 0 20px;
+    bottom: -66px;
+  }
+}
+

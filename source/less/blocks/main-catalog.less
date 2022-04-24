@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1440px;
+
 .main-catalog {
   padding: 25px 20px;
   padding-top: 27px;
@@ -14,21 +17,19 @@
 
 .main-catalog__product-list {
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .main-catalog__product-card {
   list-style-type: none;
   display: grid;
   grid-template-columns: 141px;
+  padding-top: 19px;
 }
 
 .main-catalog__product {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
   font-family: @main-font;
   font-weight: 400;
   font-size: 16px;
@@ -36,11 +37,12 @@
   color: #222222;
 }
 
+.main-catalog__product-img {
+  display: flex;
+  justify-content: center;
+}
+
 .main-catalog__table {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
 }
 
 .main-catalog__feed {
@@ -55,6 +57,7 @@
 
 .main-catalog__button {
   grid-column: 1 / -1;
+  margin-bottom: 25px;
 }
 
 .main-catalog__more-food {
@@ -63,7 +66,7 @@
 }
 
 .main-catalog__more-plus {
-  background-image: url("../../img/plus.svg");
+  background-image: url("../img/plus.svg");
   background-size: 30px 30px;
   background-repeat: no-repeat;
 }
@@ -76,6 +79,7 @@
   line-height: 20px;
   color: #111111;
   padding-top: 23px;
+  text-transform: uppercase;
 }
 
 .main-catalog__more-products-discription {
@@ -91,5 +95,156 @@
 .main-catalog__more-products-button {
   display: inline-block;
   width: 80%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    padding: 75px 30px;
+    padding-bottom: 68px;
+  }
+
+  .main-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 90px;
+  }
+
+  .main-catalog__product-list {
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-catalog__product-card {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 248px;
+    background: #f2f2f2;
+    justify-content: center;
+  }
+
+  .main-catalog__product-card:last-child {
+    background: @white;
+  }
+
+  .main-catalog__product {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 21px;
+  }
+
+  .main-catalog__product-img:nth-child(odd) {
+    margin-top: -45px;
+  }
+
+  .main-catalog__product-img:nth-child(2n) {
+    margin-top: -73px;
+  }
+
+  .main-catalog__table {
+  }
+
+  .main-catalog__feed-name {
+    padding-left: 40px;
+    padding-right: 55px;
+    padding-bottom: 21px;
+  }
+
+  .main-catalog__feed {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .main-catalog__button {
+  }
+
+  .main-catalog__more-food {
+
+  }
+
+  .main-catalog__more-plus {
+  }
+
+  .main-catalog__more-products {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .main-catalog__more-products-discription {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 23px;
+    padding-left: 48px;
+    padding-right: 30px;
+  }
+
+  .main-catalog__more-products-button {
+    font-size: 16px;
+    line-height: 0px;
+    margin-top: 107px;
+    padding: 20px 79px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    padding: 90px 110px;
+    padding-bottom: 75px;
+  }
+
+  .main-catalog__title {
+    padding-bottom: 85px;
+  }
+
+  .main-catalog__product-list {
+    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .main-catalog__product-card {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 141px;
+    background: #F2F2F2;
+  }
+
+  .main-catalog__product {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-catalog__table {
+  }
+
+  .main-catalog__feed {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .main-catalog__button {
+  }
+
+  .main-catalog__more-food {
+
+  }
+
+  .main-catalog__more-plus {
+  }
+
+  .main-catalog__more-products {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .main-catalog__more-products-discription {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 23px;
+  }
+
+  .main-catalog__more-products-button {
+    font-size: 16px;
+    line-height: 0px;
+    padding: 20px 79px;
+  }
 }
 

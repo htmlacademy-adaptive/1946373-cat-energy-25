@@ -18,4 +18,33 @@
   color: @white;
   display: block;
   align-content: center;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    background-position: top 57px left 77px, center;
+    position: relative;
+  }
+
+  .gift__info {
+    padding-left: 422px;
+    padding-top: 71px;
+    position: absolute;
+    top: -5px;
+    right: 154px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    background-position: top 58px center, center;
+    margin: 91px 0;
+    margin-bottom: 86px;
+  }
+
+  .gift__info {
+    padding-left: 41px;
+    padding-top: 59px;
+  }
 }

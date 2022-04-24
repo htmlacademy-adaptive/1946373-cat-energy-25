@@ -5,6 +5,8 @@
   background-color: #ffffff;
   padding: 10px 20px;
   display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .main-header__info {
@@ -34,7 +36,8 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
-    padding: 10px 20px;
+    padding: 0 30px;
+    padding-top: 42px;
     display: flex;
     flex-wrap: nowrap;
     gap: 93px;
@@ -70,10 +73,15 @@
 @media (min-width: @desktop-width) {
   .main-header {
     padding: 55px 110px;
-    padding-bottom: 32px;
-    display: flex;
-    flex-wrap: nowrap;
+    padding-bottom: 0;
     gap: 538px;
+  }
+
+  .main-header--active {
+    position: absolute;
+    z-index: 3;
+    background-color: transparent;
+    color: @black;
   }
 
   .main-header__info {

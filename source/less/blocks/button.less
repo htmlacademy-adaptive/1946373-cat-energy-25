@@ -1,8 +1,8 @@
 .button {
   font-style: @main-font;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: @white;
   padding: 8px 44px;
   background: @accent;
@@ -12,9 +12,36 @@
   text-transform: uppercase;
 }
 
+.button:hover {
+  background: #5EAA2F;
+}
+
+.button:active {
+  background: #5EAA2F;
+  color: #ffffff75;
+}
+
+
 .button--secondary {
   font-style: @main-font;
   color: @arial;
   background: @grey;
   text-transform: uppercase;
+}
+
+.button--secondary:hover {
+  background: #EBEBEB;
+}
+
+.button--secondary:active {
+  background: #EBEBEB;
+  color: #444444af;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
 }
