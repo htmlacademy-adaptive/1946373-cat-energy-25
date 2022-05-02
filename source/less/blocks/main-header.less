@@ -4,9 +4,7 @@
 .main-header {
   background-color: #ffffff;
   padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  align-content: center;
+  min-width: 66px;
 }
 
 .main-header__info {
@@ -19,11 +17,33 @@
 
 .main-header__logo {
   margin: 0;
+  height: 38px;
 }
 
 .main-header__toggle {
   margin: 0;
   padding: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  min-height: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.main-header__toogle--closed {
+  display: block;
+  background-image: url("../img/nav-closed");
+}
+
+.main-header__toogle--opened {
+  display: block;
+  background-image: url("../img/nav-opened");
+}
+
+
+.main-header__toogle--nojs {
+  display: block;
 }
 
 .logo-img {
@@ -34,13 +54,18 @@
   height: 18px;
 }
 
+
 @media (min-width: @tablet-width) {
   .main-header {
     padding: 0 30px;
     padding-top: 42px;
     display: flex;
     flex-wrap: nowrap;
+    flex-grow: 1;
     gap: 93px;
+    width: 96%;        //посчитала что 92% но только при 96 встает нормально, почему?//
+    max-width: 960px;
+    margin: 0;
   }
 
   .main-header__info {
