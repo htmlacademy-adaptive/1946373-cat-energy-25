@@ -1,9 +1,23 @@
 @tablet-width: 768px;
 @desktop-width: 1440px;
 
+.cooperation__maps {
+  display: block;
+  border: none;
+  min-width: 320px;
+  min-height: 362px;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation__maps {
+    min-width: 768px;
+    min-height: 400px;
+  }
+}
 
 @media (min-width: @desktop-width) {
-  .cooperation__map {
-  position: relative;
+  .cooperation__maps {
+    min-width: 1440px;
+    min-height: 400px;
   }
 }

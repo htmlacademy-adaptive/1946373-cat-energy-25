@@ -44,20 +44,25 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .user-list__item .main-nav__list {
+  .main-nav--closed,
+  .user-list__item,
+  .main-nav__list {
     display: none;
   }
 
-  .main-nav--nojs .main-nav__wrapper {
+  .main-nav--nojs,
+  .main-nav__wrapper {
     position: static;
     min-height: 0;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-nav--nojs,
+  .site-list__item {
     display: block;
   }
 
-  .main-nav--nojs .user-list__item {
+  .main-nav--nojs,
+  .user-list__item {
     display: block;
   }
 }
