@@ -111,15 +111,15 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control__input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 13px;
-  height: 13px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 7px;
+  left: 7px;
   background-color: #68b738;
   border-radius: 50%;
-  content: "";
 }
 
 .control__label {
@@ -131,6 +131,23 @@
   text-transform: uppercase;
   color: @title;
   padding-left: 35px;
+}
+
+.control__span {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.control__input[type="checkbox"]:checked + .control__span::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 4px;
+  width: 18px;
+  height: 20px;
+  background-image: url("../img/selected.svg");
 }
 
 .catalog-filter-contacts__title {
@@ -277,6 +294,13 @@
     margin: 0;
   }
 
+  .catalog-filter-form__filter-list {
+    display: block;
+  }
+
+  .catalog-filter-form__filter-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
 
   .catalog-filter-form__counter,
   .catalog-filter-contacts__title {
@@ -316,6 +340,7 @@
 
   .catalog-filter-group__list {
     margin: 0;
+    padding-top: 0;
   }
 
   .catalog-filter-group__item {
@@ -329,6 +354,19 @@
   .control__label {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .control__input[type="radio"]:checked + .control-mark::before {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .control-mark {
+    left: -20px;
+    width: 40px;
+    height: 40px;
   }
 
   .catalog-filter-contacts__title {
