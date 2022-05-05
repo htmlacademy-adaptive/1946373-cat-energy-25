@@ -13,23 +13,34 @@
   line-height: 24px;
 }
 
-.additional__title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  padding-left: 19px;
+.additional__products {
+  display: grid;
 }
 
-.additional__table-characteristics,
-.additional__table-description {
+.additional__table-characteristics {
   font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: @arial;
+  padding-bottom: 15px;
+}
+
+.additional__title {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 16px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.additional__item__button {
+  padding: 10px 100px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -78,7 +89,7 @@
   }
 
   .additional__menu {
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
   }
 
   .additional__products {

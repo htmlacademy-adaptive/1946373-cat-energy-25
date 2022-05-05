@@ -20,42 +20,42 @@
   height: 38px;
 }
 
-.main-header__toggle {
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-  display: block;
-  width: 24px;
-  min-height: 16px;
-  cursor: pointer;
-  border: none;
+@media (max-width: @mobile-width-only) {
+
+  .main-header__toggle {
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    min-height: 16px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .main-header__toogle--closed {
+    display: block;
+    width: 24px;
+    height: 18px;
+  }
+
+  .main-header__toogle--opened {
+    display: block;
+    background-image: url("../img/nav-opened.svg");
+  }
+
+  .main-header__toogle--nojs {
+    display: none;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .logo-slogan {
+    height: 18px;
+  }
 }
-
-
-.main-header__toogle--closed {
-  display: block;
-  background-image: url("../img/nav-closed.svg");
-  width: 24px;
-  height: 18px;
-}
-
-.main-header__toogle--opened {
-  display: block;
-  background-image: url("../img/nav-opened.svg");
-}
-
-.main-header__toogle--nojs {
-  display: block;
-}
-
-.logo-img {
-  height: 38px;
-}
-
-.logo-slogan {
-  height: 18px;
-}
-
 
 @media (min-width: @tablet-width) {
   .main-header {
@@ -63,10 +63,9 @@
     padding-top: 42px;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
     flex-grow: 1;
-    gap: 93px;
-    width: 96%;        //посчитала что 92% но только при 96 встает нормально, почему?//
-    max-width: 960px;
+    width: 96%;
     margin: 0;
   }
 
@@ -75,7 +74,6 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 12px;
-    justify-content: space-between;
   }
 
   .logo-img {
@@ -101,7 +99,6 @@
   .main-header {
     padding: 55px 110px;
     padding-bottom: 0;
-    gap: 538px;
   }
 
   .main-header--active {

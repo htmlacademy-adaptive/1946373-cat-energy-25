@@ -19,14 +19,23 @@
   padding: 0;
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .main-catalog__product-card {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 141px;
+  grid-template-columns: 141px 141px;
   padding-top: 19px;
+}
+
+.main-catalog__product-card:last-child {
+  grid-template-columns: 279px;
+}
+
+.main-catalog__table {
+  padding-top: 14px;
+  padding-bottom: 22px;
 }
 
 .main-catalog__product {
@@ -35,11 +44,14 @@
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+  padding-right: 18px;
+  max-width: 14ch;
 }
 
 .main-catalog__product-img {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .main-catalog__table {
@@ -67,7 +79,8 @@
 
 .main-catalog__more-plus {
   background-image: url("../img/plus.svg");
-  background-size: 30px 30px;
+  height: 30px;
+  width: 30px;
   background-repeat: no-repeat;
 }
 
@@ -124,19 +137,27 @@
 
   .main-catalog__product-card:last-child {
     background: @white;
+    border: 2px solid #f2f2f2;
+  }
+
+  .main-catalog__more-plus {
+    height: 60px;
+    width: 60px;
+    background-size: 100%;
   }
 
   .main-catalog__product {
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 21px;
+    max-width: 14ch;
   }
 
-  .main-catalog__product-img:nth-child(odd) {
+  .main-catalog__product-img {
     margin-top: -45px;
   }
 
-  .main-catalog__product-img:nth-child(2n) {
+  .main-catalog__product-img-second {
     margin-top: -73px;
   }
 
@@ -155,18 +176,20 @@
   }
 
   .main-catalog__button {
+    margin-top: 33px;
   }
 
-  .main-catalog__more-food {
-
-  }
-
-  .main-catalog__more-plus {
+  .main-catalog__feed-info {
   }
 
   .main-catalog__more-products {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .main-catalog__more-food {
+    margin-top: 52px;
+    margin-bottom: 58px;
   }
 
   .main-catalog__more-products-discription {
@@ -204,7 +227,7 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: 141px;
-    background: #F2F2F2;
+    background: #f2f2f2;
   }
 
   .main-catalog__product {
