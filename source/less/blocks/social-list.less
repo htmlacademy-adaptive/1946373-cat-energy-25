@@ -1,9 +1,13 @@
 .social-list {
-  padding-top: 32px;
+  padding-top: 22px;
   display: flex;
   gap: 26px;
   padding-bottom: 22px;
   justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid transparent;
+  border-top: ridge  #d9d9d9;
+  border-bottom: ridge  #d9d9d9;
 }
 
 .social-list__prodact {
@@ -29,6 +33,16 @@
 
 .social-item__icon:focus {
   outline: none;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    border: none;
+  }
+
+  .social-list__prodact {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
