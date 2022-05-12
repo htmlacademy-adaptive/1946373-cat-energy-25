@@ -54,9 +54,6 @@
   align-items: center;
 }
 
-.main-catalog__table {
-}
-
 .main-catalog__feed {
   font-family: @accent-font;
   font-style: normal;
@@ -70,6 +67,7 @@
 .main-catalog__button {
   grid-column: 1 / -1;
   margin-bottom: 25px;
+  align-self: end;
 }
 
 .main-catalog__more-food {
@@ -138,13 +136,16 @@
   .main-catalog__product-card:last-child {
     background: @white;
     border: 2px solid #f2f2f2;
+    grid-template-columns: 324px;
   }
 
   .main-catalog__feed-info {
     display: flex;
     justify-content: space-between;
-    padding: 9px 34px;
-    gap: 155px;
+    margin-left: 37px;
+    margin-right: 39px;
+    padding-top: 7px;
+    padding-bottom: 9px;
     border: 1px solid transparent;
     border-bottom: 1px solid #cdcdcd;
   }
@@ -164,6 +165,31 @@
 
   .main-catalog__product-img {
     margin-top: -45px;
+  }
+
+  .main-catalog__product-card-small {
+    width: 161px;
+    height: 172px;
+  }
+
+  .main-catalog__product-card-small-second {
+    width: 163px;
+    height: 174px;
+  }
+
+  .main-catalog__product-card-small-third {
+    width: 161px;
+    height: 171px;
+  }
+
+  .main-catalog__product-card-chiken-pro {
+    width: 168px;
+    height: 206px;
+  }
+
+  .main-catalog__product-card-big {
+    width: 168px;
+    height: 200px;
   }
 
   .main-catalog__table {
@@ -187,6 +213,9 @@
 
   .main-catalog__button {
     margin-top: 33px;
+    margin-left: 39px;
+    margin-right: 37px;
+    padding: 10px 93px;
   }
 
   .main-catalog__more-products {
@@ -230,11 +259,19 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
+  .main-catalog__button {
+    padding: 10px 53px;
+  }
+
   .main-catalog__product-card {
     list-style-type: none;
     display: grid;
     grid-template-columns: 245px;
     background: #f2f2f2;
+  }
+
+  .main-catalog__product-card:last-child {
+    grid-template-columns: 245px;
   }
 
   .main-catalog__feed-info {
@@ -246,7 +283,19 @@
     line-height: 24px;
   }
 
-  .main-catalog__table {
+  .main-catalog__product-card-chiken-pro {
+    width: 172px;
+    height: 202px;
+  }
+
+  .main-catalog__product-card-fish {
+    width: 172px;
+    height: 196px;
+  }
+
+  .main-catalog__product-card-buckwheat {
+    width: 172px;
+    height: 196px;
   }
 
   .main-catalog__feed {
@@ -254,19 +303,10 @@
     line-height: 16px;
   }
 
-  .main-catalog__button {
-  }
-
-  .main-catalog__more-food {
-
-  }
-
-  .main-catalog__more-plus {
-  }
-
   .main-catalog__more-products {
     font-size: 20px;
     line-height: 22px;
+    padding-left: 67px;
   }
 
   .main-catalog__more-products-discription {
@@ -277,8 +317,8 @@
 
   .main-catalog__more-products-button {
     font-size: 16px;
-    line-height: 0px;
-    padding: 20px 79px;
+    line-height: 1px;
+    padding: 20px 39px;
   }
 
   .additional__products {
