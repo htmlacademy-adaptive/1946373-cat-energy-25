@@ -69,7 +69,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/.svg', '!source/img/icons/.svg'])
+gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
@@ -87,8 +87,8 @@ inlineSvg: true
 
 const copy = (done) => {
 gulp.src([
-'source/fonts/.{woff2,woff}',
-'source/.ico',
+'source/fonts/*.{woff2,woff}',
+'source/*.ico',
 ], {
 base: 'source'
 })
@@ -126,9 +126,9 @@ done();
 // Watcher
 
 const watcher = () => {
-gulp.watch('source/less/**/.less', gulp.series(styles));
+gulp.watch('source/less/**/*.less', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
-gulp.watch('source/.html', gulp.series(html, reload));
+gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -148,7 +148,6 @@ createWebp
 );
 
 // Default
-
 export default gulp.series(
 clean,
 copy,
