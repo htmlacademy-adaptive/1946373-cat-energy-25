@@ -53,7 +53,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 
 const copyImages = () => {
 return gulp.src('source/img/**/*.{png,jpg}')
-.pipe(gulp.dest('build/img'))
+.pipe(gulp.dest('build/img/'))
 }
 
 // WebP
@@ -68,18 +68,18 @@ webp: {}
 
 // SVG
 
-const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+export const svg = () =>
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const sprite = () => {
 return gulp.src('source/img/icons/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
 }))
-.pipe(rename('sprite.svg'))
+.pipe(rename('new-sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
 

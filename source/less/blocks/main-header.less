@@ -37,27 +37,28 @@
     position: relative;
   }
 
-  // .main-header__toogle--closed::before {
-  //   // display: block;
-  //   width: 24px;
-  //   height: 16px;
-  //   position: absolute;
-  //   content: "";
-  //   background-image: url("../img/menu.svg");
-  //}
+  .main-header__toogle--closed::before {
+    // display: block;
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    content: "";
+    background-image: url("../img/menu.svg");
+  }
 
   .main-header__toogle--opened {
     display: block;
   }
 
   .main-header__toogle--opened::before {
-    width: 24px;
-    height: 16px;
+    width: 19px;
+    height: 19px;
     position: absolute;
     content: "";
     background-image: url("../img/nav-opened.svg");
     top: 0;
     right: 15px;
+    background-repeat: no-repeat;
   }
 
   // .main-header__toogle::before,
