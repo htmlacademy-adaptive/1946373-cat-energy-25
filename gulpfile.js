@@ -69,17 +69,17 @@ webp: {}
 // SVG
 
 export const svg = () =>
-gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['source/img/**/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 export const sprite = () => {
-return gulp.src('source/img/icons/*.svg')
+return gulp.src('source/icons/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
 }))
-.pipe(rename('new-sprite.svg'))
+.pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
 
@@ -126,9 +126,10 @@ done();
 // Watcher
 
 const watcher = () => {
-gulp.watch('source/less/**/*.less', gulp.series(styles));
-gulp.watch('source/js/script.js', gulp.series(scripts));
+gulp.watch('source/less/**/*.less', styles);
+gulp.watch('source/js/script.js', scripts);
 gulp.watch('source/*.html', gulp.series(html, reload));
+gulp.watch('source/icons/*.svg', sprite);
 }
 
 // Build
