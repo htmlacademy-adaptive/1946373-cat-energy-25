@@ -5,15 +5,14 @@ console.log(navMain)
 navMain.classList.remove('main-nav--nojs');
 
 console.log(navToggle)
-navToggle.classList.remove('main-header__toogle--nojs');
+navToggle.classList.remove('main-header__toggle--nojs');
 
 navToggle.addEventListener('click', function () {
+  navMain.classList.toggle('main-nav--closed');
 
-   navMain.classList.toggle('main-nav--closed');
 
-
-   navToggle.classList.toggle('main-header__toogle--opened');
-   navToggle.classList.toggle('main-header__toogle--closed');
+  navToggle.classList.toggle('main-header__toggle--opened');
+  navToggle.classList.toggle('main-header__toggle--closed');
 });
 
 
