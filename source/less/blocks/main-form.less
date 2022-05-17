@@ -59,11 +59,6 @@
   gap: 14px;
 }
 
-.meaning-weight,
-.meaning-age {
-  padding-right: 15px;
-}
-
 .catalog-filter-form__meaning {
   height: 45;
   width: 229;
@@ -74,9 +69,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @arial;
-  border: 1px solid @grey;
+  border: 1px solid @light-grey;
   box-sizing: border-box;
   padding: 15px 13px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .catalog-filter-group__list {
@@ -94,6 +101,10 @@
 .control {
   position: relative;
   display: block;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .control-mark {
@@ -214,6 +225,18 @@
   border: 1px solid @grey;
   box-sizing: border-box;
   padding: 15px 13px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .catalog-filter-comments {
