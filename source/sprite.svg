@@ -9,7 +9,7 @@
 </symbol>
 
 <symbol id="logo-menu" viewBox="0 0 24 18">
-<path stroke="#000" stroke-width="1.5" d="M0 1.3h24M0 9.3h24M0 17.3h24"/>
+<path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" fill="none"/>
 </symbol>
 
 <symbol id="vkontakte" viewBox="0 0 27 17">
@@ -93,7 +93,8 @@
   <rect x="22.5" y="15" width="15.5" height="1.5" rx=".8" fill="#fff"/>
 </symbol>
 
-<symbol id="" viewBox="0 0 61 60">
+<symbol id="logo-tablet" viewBox="0 0 61 51">
+
 
 </symbol>
 

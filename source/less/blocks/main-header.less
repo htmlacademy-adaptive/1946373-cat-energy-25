@@ -12,19 +12,21 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 56px;
-  justify-content: space-between;
 }
 
 .main-header__logo {
   margin: 0;
-  height: 38px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.1;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-header__toggle--nojs {
-    display: none;
-  }
-
   .main-header__toggle {
     margin: 0;
     padding: 0;
@@ -35,59 +37,45 @@
     cursor: pointer;
     border: none;
     position: relative;
+    background-color: transparent;
   }
 
-  // .main-header__toogle--closed::before {
-  //   // display: block;
-  //   width: 24px;
-  //   height: 16px;
-  //   position: absolute;
-  //   content: "";
-  //   background-image: url("../img/menu.svg");
-  //}
+  .main-header__toggle--nojs {
+    display: none;
+  }
 
-  .main-header__toogle--opened {
+  .main-header__toggle--closed::before {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    content: "";
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+  }
+
+  .main-header__toggle--opened {
     display: block;
   }
 
-  .main-header__toogle--opened::before {
-    width: 24px;
-    height: 16px;
+  .main-header__toggle--opened::before {
+    width: 19px;
+    height: 19px;
     position: absolute;
     content: "";
     background-image: url("../img/nav-opened.svg");
     top: 0;
-    right: 15px;
+    right: 0;
+    background-repeat: no-repeat;
   }
-
-  // .main-header__toogle::before,
-  // .main-header__toogle::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 19px;
-  //   height: 2px;
-  //   background-color: @black;
-  // }
-
-  // .main-header__toogle::before {
-  //   transform: rotate(45deg);
-  //   box-shadow: none;
-  // }
-
-  // .main-header__toogle::after {
-  //   transform: rotate(-45deg);
-  // }
-
-  // .main-header__toogle:active::before,
-  // .main-header__toogle:active::after {
-  //   background-color: @black;
-  // }
 
   .logo-img {
     height: 38px;
   }
 
   .logo-slogan {
+    width: 101px;
     height: 18px;
   }
 }
@@ -111,10 +99,12 @@
   }
 
   .logo-img {
-    height: 55px;
+    width: 60px;
+    height: 50px;
   }
 
   .logo-slogan {
+    width: 101px;
     height: 19px;
   }
 
@@ -135,6 +125,16 @@
     padding-bottom: 0;
     max-width: 1220px;
     margin: auto;
+  }
+
+  .logo-img {
+    height: 59px;
+    width: 70px;
+  }
+
+  .logo-slogan {
+    width: 118px;
+    height: 21px;
   }
 
   .main-header--active {

@@ -36,11 +36,14 @@
 
 .catalog-filter-form__filter-list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
   margin: 0;
   padding: 0;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.catalog-filter-form__counter:not(:last-child) {
+  padding-bottom: 13px;
 }
 
 .catalog-filter-form__counter,
@@ -59,11 +62,6 @@
   gap: 14px;
 }
 
-.meaning-weight,
-.meaning-age {
-  padding-right: 15px;
-}
-
 .catalog-filter-form__meaning {
   height: 45;
   width: 229;
@@ -74,9 +72,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @arial;
-  border: 1px solid @grey;
+  border: 1px solid @light-grey;
   box-sizing: border-box;
   padding: 15px 13px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &-error {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .catalog-filter-group__list {
@@ -94,6 +104,10 @@
 .control {
   position: relative;
   display: block;
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .control-mark {
@@ -131,6 +145,10 @@
   text-transform: uppercase;
   color: @title;
   padding-left: 35px;
+}
+
+.control__label:active {
+  opacity: 0.3;
 }
 
 .control__span {
@@ -194,14 +212,6 @@
   color: @arial;
 }
 
-.email {
-  padding-right: 11px;
-}
-
-.tel {
-  padding-right: 8px;
-}
-
 .email__input,
 .phone-number__input {
   font-family: @main-font, sans-serif;
@@ -214,6 +224,35 @@
   border: 1px solid @grey;
   box-sizing: border-box;
   padding: 15px 13px;
+  position: relative;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.email__input {
+  background-image: url("../img/email.svg");
+  background-size: 18px 13px;
+  background-position: center right 16px;
+  background-repeat: no-repeat;
+  min-width: 217px;
+}
+
+.phone-number__input {
+  background-image: url("../img/telephone.svg");
+  background-size: 18px 13px;
+  background-position: center right 16px;
+  background-repeat: no-repeat;
+  min-width: 200px;
 }
 
 .catalog-filter-comments {
@@ -414,6 +453,14 @@
     padding: 10px 21px;
   }
 
+  .email__input {
+    min-width: 536px;
+  }
+
+  .phone-number__input {
+    min-width: 519px;
+  }
+
   .catalog-filter-comments {
     padding: 0;
     margin: 0;
@@ -457,6 +504,10 @@
     font-size: 16px;
     line-height: 16px;
     padding-top: 43px;
+  }
+
+  .catalog-filter-button__cost {
+    padding: 17px 44px;
   }
 }
 
@@ -533,7 +584,6 @@
   .catalog-filter-contacts__filter-list {
     padding-top: 76px;
     display: flex;
-    gap: 78px;
     justify-content: space-between;
   }
 
@@ -559,6 +609,14 @@
 
   .tel {
     padding-right: 14px;
+  }
+
+  .email__input {
+    min-width: 486px;
+  }
+
+  .phone-number__input {
+    min-width: 472px;
   }
 
   .email__input,
@@ -594,5 +652,9 @@
   .catalog-filter-explanation {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .catalog-filter-button__cost {
+    padding: 13px 188px;
   }
 }
