@@ -48,7 +48,7 @@
 
 .catalog-filter-form__counter,
 .catalog-filter-contacts__title {
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -65,7 +65,7 @@
 .catalog-filter-form__meaning {
   height: 45;
   width: 229;
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -137,7 +137,7 @@
 }
 
 .control__label {
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -169,7 +169,7 @@
 }
 
 .catalog-filter-contacts__title {
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -204,7 +204,7 @@
 
 .email,
 .tel {
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
@@ -214,7 +214,7 @@
 
 .email__input,
 .phone-number__input {
-  font-family: @main-font, sans-serif;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -225,18 +225,6 @@
   box-sizing: border-box;
   padding: 15px 13px;
   position: relative;
-
-  &:hover {
-    outline: 1px solid #cdcdcd;
-  }
-
-  &:focus {
-    outline: 2px solid #444444;
-  }
-
-  &--error {
-    outline: 2px solid #ff8282;
-  }
 }
 
 .email__input {
@@ -245,6 +233,20 @@
   background-position: center right 16px;
   background-repeat: no-repeat;
   min-width: 217px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    background-image: url("../img/email-focus.svg");
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+    background-image: url("../img/email-error.svg");
+  }
 }
 
 .phone-number__input {
@@ -253,6 +255,20 @@
   background-position: center right 16px;
   background-repeat: no-repeat;
   min-width: 200px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    background-image: url("../img/telephone-focus.svg");
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+    background-image: url("../img/telephone-error.svg");
+  }
 }
 
 .catalog-filter-comments {
@@ -264,7 +280,7 @@
 
 .catalog-filter-comments__title,
 .catalog-filter-more__title {
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -276,7 +292,7 @@
   width: 280px;
   height: 151px;
   border: 1px solid @light-grey;
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -306,7 +322,7 @@
 }
 
 .catalog-filter-explanation {
-  font-family: @accent-font;
+  font-family: @accent-font, @main-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

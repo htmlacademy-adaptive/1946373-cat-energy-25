@@ -8,13 +8,6 @@
   margin-top: 20px;
 }
 
-// .program-card__title {
-//   display: grid;
-//   grid-template-columns: 67px auto;
-//   gap: 19px;
-//   align-items: center;
-// }
-
 .program-slogan {
   font-weight: 400;
   font-size: 24px;
@@ -81,7 +74,7 @@
 }
 
 .program-card__description {
-  font-family: @accent-font;
+  font-family: @accent-font, @main-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -99,30 +92,31 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @black;
-  display: block;
   padding-top: 19px;
   padding-bottom: 22px;
   position: relative;
   cursor: pointer;
-}
+  display: flex;
 
-.program-card__button::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/program-card__button.svg");
-  width: 24px;
-  height: 12px;
-  background-size: 24px 12px;
-  background-repeat: no-repeat;
-  right: 102px;
-  top: 19px;
-}
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/program-card__button.svg");
+    width: 24px;
+    height: 12px;
+    background-size: 24px 12px;
+    background-repeat: no-repeat;
+    right: 102px;
+    top: 19px;
+    order: 1;
+  }
 
-.program-card__button:hover::after {
-  position: absolute;
-  background-image: url("../img/program-card__button-hover.svg");
-  background-size: 32px 12px;
-  background-repeat: no-repeat;
+  &:hover::after {
+    background-image: url("../img/program-card__button-hover.svg");
+    background-size: 32px 12px;
+    background-repeat: no-repeat;
+    width: 32px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -197,18 +191,11 @@
     line-height: 30px;
     padding-bottom: 57px;
     padding-top: 52px;
-  }
 
-  .program-card__button::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/program-card__button.svg");
-    width: 24px;
-    height: 12px;
-    background-size: 24px 12px;
-    background-repeat: no-repeat;
-    left: 133px;
-    top: 58px;
+    &::after {
+      left: 133px;
+      top: 58px;
+    }
   }
 }
 
@@ -291,17 +278,10 @@
     line-height: 30px;
     padding-bottom: 59px;
     padding-top: 27px;
-  }
 
-  .program-card__button::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/program-card__button.svg");
-    width: 24px;
-    height: 12px;
-    background-size: 24px 12px;
-    background-repeat: no-repeat;
-    left: 136px;
-    top: 35px;
+    &::after {
+      left: 136px;
+      top: 35px;
+    }
   }
 }

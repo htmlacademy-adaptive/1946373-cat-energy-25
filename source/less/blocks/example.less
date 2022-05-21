@@ -16,7 +16,7 @@
 }
 
 .example__discription {
-  font-family: @accent-font;
+  font-family: @accent-font, @main-font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -28,7 +28,7 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background-color: #eaeaea;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%);
     padding: 43px 30px;
   }
 
@@ -52,7 +52,7 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    background-color: @grey;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(242, 242, 242, 1) 28%);
     padding-left: 110px;
     padding-right: 117px;
     padding-top: 69px;
