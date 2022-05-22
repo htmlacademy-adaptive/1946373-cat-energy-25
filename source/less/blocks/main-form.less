@@ -1,5 +1,5 @@
 .main-form {
-  padding: 27px 20px;
+  padding: 27px 0;
   padding-bottom: 32px;
 }
 
@@ -11,6 +11,7 @@
   line-height: 36px;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
 }
 
 .main-form__info {
@@ -24,6 +25,7 @@
   padding-bottom: 37px;
   margin: 0;
   padding-right: 55px;
+  padding-left: 20px;
 }
 
 .catalog-filter-form,
@@ -34,6 +36,10 @@
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.catalog-filter-form__filter-item {
+  padding: 0 20px;
 }
 
 .catalog-filter-form__filter-item:not(:first-child) {
@@ -98,10 +104,12 @@
   margin: 0;
   padding: 0;
   padding-top: 21px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .catalog-filter-group__item {
   padding-bottom: 19px;
+  padding-left: 20px;
 }
 
 .control {
@@ -180,26 +188,41 @@
   color: @black;
   padding-top: 29px;
   text-transform: inherit;
+  padding-left: 20px;
+  width: 216px;
+  position: relative;
+  background-color: @white;
 }
 
 .catalog-filter-contacts {
   padding: 0;
   margin: 0;
   margin-bottom: 23px;
+  position: relative;
+}
+
+.catalog-filter-contacts::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  z-index: -1;
+  right: 0;
 }
 
 .catalog-filter-contacts__filter-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 32px;
+  max-width: 1220px;
 }
 
-// .catalog-filter-contacts__filter-item {
-//   display: grid;
-//   gap: 9px;
-//   grid-template-columns: auto 1fr;
-// }
+.catalog-filter-contacts__filter-item {
+  padding-left: 20px;
+}
 
 .catalog-filter-contacts__filter-item:first-child {
   padding-bottom: 14px;
@@ -283,23 +306,41 @@
   margin: 0;
   display: grid;
   gap: 37px;
+  position: relative;
+}
+
+.catalog-filter-comments::before,
+.catalog-filter-more::before {
+  content: "";
+  position: absolute;
+  top: 6%;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  z-index: -1;
+  right: 0;
 }
 
 .catalog-filter-comments__title,
 .catalog-filter-more__title {
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: @black;
+  padding-left: 20px;
+  width: fit-content;
+  position: relative;
+  background-color: @white;
+  padding-right: 22px;
 }
 
 .catalog-filter-comments__text {
   width: 280px;
   height: 151px;
   border: 1px solid @light-grey;
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -308,21 +349,31 @@
   color: @arial;
   padding-top: 10px;
   padding-left: 15px;
+  margin-left: 20px;
 }
 
 .catalog-filter-more {
   margin-top: 23px;
+  position: relative;
 }
 
 .catalog-filter-more__list {
   list-style-type: none;
   padding-top: 15px;
   padding-left: 0;
+  margin: 0 auto;
+  max-width: 1220px;
 }
 
 .catalog-filter-button__cost {
+  margin: 0 20px;
   margin-top: 22px;
-  width: 100%;
+  margin-right: 20px;
+  width: 280px;
+}
+
+.catalog-filter-more__item {
+  padding-left: 20px;
 }
 
 .catalog-filter-more__item:not(:last-child) {
@@ -345,12 +396,16 @@
 @media (min-width: @tablet-width) {
   .main-form {
     padding: 75px 69px;
+    padding-left: 0;
     padding-bottom: 72px;
   }
 
   .main-form__check-program {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 auto;
+    max-width: 1220px;
+    padding-left: 70px;
   }
 
   .main-form__info {
@@ -358,12 +413,15 @@
     line-height: 30px;
     padding-top: 54px;
     padding-bottom: 64px;
-    padding-right: 305px;
+    padding-right: 290px;
+    padding-left: 70px;
     margin: 0;
   }
 
   .catalog-filter-form__filter-list {
     display: block;
+    border: none;
+    padding-left: 70px;
   }
 
   .catalog-filter-form__filter-item:not(:last-child) {
@@ -387,6 +445,18 @@
     padding: 15px 13px;
   }
 
+  .catalog-filter-contacts::before {
+    top: 19%;
+  }
+
+  .catalog-filter-comments::before {
+    top: 8%;
+  }
+
+  .catalog-filter-more::before {
+    top: 9%;
+  }
+
   .meaning-name {
     width: 567px;
   }
@@ -404,11 +474,13 @@
     padding: 30px 88px;
     margin-top: 72px;
     margin-bottom: 75px;
+    margin-left: 70px;
   }
 
   .catalog-filter-group__list {
     margin: 0;
     padding-top: 0;
+    border: none;
   }
 
   .catalog-filter-group__item {
@@ -440,10 +512,17 @@
   .catalog-filter-contacts__title {
     font-size: 36px;
     line-height: 36px;
+    min-width: 534px;
+    display: block;
+    margin-left: 20px;
   }
 
   .catalog-filter-contacts__filter-list {
     padding-top: 76px;
+  }
+
+  .catalog-filter-contacts__filter-item {
+    padding-left: 70px;
   }
 
   .catalog-filter-contacts__filter-item:not(:last-child) {
@@ -487,15 +566,17 @@
 
   .catalog-filter-comments {
     padding: 0;
-    margin: 0;
     display: grid;
     gap: 37px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
   .catalog-filter-comments__title,
   .catalog-filter-more__title {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 20px;
   }
 
   .catalog-filter-comments__text {
@@ -504,12 +585,16 @@
     padding: 10px 19px;
     height: 174px;
     width: 631px;
+    margin-left: 70px;
   }
 
   .catalog-filter-button {
     padding-top: 59px;
     display: flex;
     gap: 61px;
+    padding-left: 70px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
   .catalog-filter-more {
@@ -522,6 +607,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 42px;
     column-gap: 124px;
+    padding-left: 70px;
   }
 
   .catalog-filter-explanation {
@@ -544,8 +630,9 @@
   .main-form__info {
     padding-top: 56px;
     padding-bottom: 66px;
-    padding-right: 897px;
-    margin: 0;
+    padding-right: 830px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
 
@@ -566,21 +653,26 @@
     padding: 15px 13px;
   }
 
+  .catalog-filter-form__filter-item {
+    padding: 0;
+  }
+
   .meaning-name {
-    width: 567px;
+    width: 506px;
   }
 
   .meaning-weight {
-    width: 536px;
+    width: 475px;
   }
 
   .meaning-age {
-    width: 497px;
+    width: 437px;
   }
 
   .catalog-filter-group {
     margin: 0;
     padding: 30px 88px;
+    width: 570px;
   }
 
   .catalog-filter-group__item:not(:first-child) {
@@ -595,6 +687,8 @@
   .desktop-container {
     display: flex;
     gap: 80px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 
 
@@ -603,6 +697,10 @@
     line-height: 36px;
     padding-bottom: 0;
     padding-top: 69px;
+  }
+
+  .catalog-filter-contacts__filter-item {
+    padding: 0;
   }
 
   .catalog-filter-contacts__filter-list {
@@ -617,8 +715,9 @@
 
   .catalog-filter-contacts {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 65px;
+    max-width: 1220px;
   }
 
   .email,
@@ -660,10 +759,14 @@
     padding-top: 61px;
     display: flex;
     gap: 81px;
+    padding-left: 0;
+    grid-template-columns: auto auto;
   }
 
   .catalog-filter-more {
+    margin: 0 auto;
     margin-top: 67px;
+    max-width: 1220px;
   }
 
   .catalog-filter-more__list {
@@ -679,6 +782,22 @@
   }
 
   .catalog-filter-button__cost {
+    font-size: 20px;
+    line-height: 1;
     padding: 13px 188px;
+    width: 568px;
+    margin: 0;
+  }
+
+  .catalog-filter-contacts::before {
+    top: 35%;
+  }
+
+  .catalog-filter-comments::before {
+    top: 6%;
+  }
+
+  .catalog-filter-more::before {
+    top: 13%;
   }
 }

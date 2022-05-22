@@ -2,9 +2,8 @@
 @desktop-width: 1440px;
 
 .main-catalog {
-  padding: 25px 20px;
   padding-top: 27px;
-  padding-right: 18px;
+  padding-bottom: 25px;
   position: relative;
 }
 
@@ -39,22 +38,15 @@
 .main-catalog__product-card {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 141px 141px;
+  grid-template-columns: 141px 161px;
   padding-top: 19px;
 }
 
-.main-catalog__product-card:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  top: 6%;
-  height: 1px;
-  width: 320px;
-  background-color: #ebebeb;
-  z-index: -1;
-  right: 0;
+.border {
+  border-bottom: 1px solid #ebebeb;
 }
 
-.main-catalog__product-card:last-child {
+.product-card-last {
   grid-template-columns: 279px;
   padding-top: 26px;
 }
@@ -76,7 +68,7 @@
 }
 
 .main-catalog__product {
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -99,7 +91,7 @@
 }
 
 .main-catalog__feed {
-  font-family: @accent-font, @main-font, sans-serif;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -112,6 +104,7 @@
   grid-column: 1 / -1;
   margin-bottom: 25px;
   align-self: end;
+  margin-left: 20px;
 }
 
 .main-catalog__more-food {
@@ -127,7 +120,7 @@
 }
 
 .main-catalog__more-products {
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -138,8 +131,12 @@
   text-transform: uppercase;
 }
 
+.products-last {
+  padding-left: 40px;
+}
+
 .main-catalog__more-products-discription {
-  font-family: @accent-font, @main-font, sans-serif;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -150,9 +147,15 @@
   padding-bottom: 23px;
 }
 
+.discription-last {
+  padding-left: 30px;
+}
+
 .main-catalog__more-products-button {
   display: inline-block;
-  width: 80%;
+  width: 279px;
+  margin-left: 20px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -170,6 +173,7 @@
     line-height: 60px;
     padding-bottom: 90px;
   }
+
 
   .main-catalog__product-list {
     gap: 60px;
@@ -252,9 +256,10 @@
   }
 
   .main-catalog__feed-name {
-    padding-left: 40px;
-    padding-right: 55px;
+    padding-left: 78px;
+    text-align: center;
     padding-bottom: 21px;
+    width: 174px;
   }
 
   .main-catalog__feed {

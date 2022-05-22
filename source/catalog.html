@@ -47,10 +47,13 @@
         </ul>
       </nav>
     </header>
-    <main class="main-catalog container">
+    <main class="main-catalog">
       <h1 class="main-catalog__title">Каталог продукции</h1>
       <ul class="main-catalog__product-list">
-        <li class="main-catalog__product-card">
+
+        <li class="main-catalog__product-card border">
+          <!-- <div class="container">
+            <div class=""> -->
           <a class="main-catalog__product-img " href="/product-1">
             <div>
             <picture>
@@ -105,7 +108,7 @@
           <button class="main-catalog__button button" type="button">
             Заказать
           </button>
-        </li>
+    </li>
 
         <li class="main-catalog__product-card">
           <a class="main-catalog__product-img main-catalog__product-img-second" href="/product-2">
@@ -447,13 +450,12 @@
           </button>
         </li>
 
-        <li class="main-catalog__product-card">
-          <div class="main-catalog__more-food">
+        <li class="main-catalog__product-card main-catalog__more-food product-card-last">
             <a class="main-catalog__more-plus" aria-hidden="true" href="#">
               <span class="visually-hidden">Загрузить еще</span></a
             >
-            <h2 class="main-catalog__more-products">Показать еще 100500 товаров</h2>
-            <p class="main-catalog__more-products-discription">
+            <h2 class="main-catalog__more-products products-last">Показать еще 100500 товаров</h2>
+            <p class="main-catalog__more-products-discription discription-last">
               На самом деле вкусов гораздо больше!
             </p>
             <a
@@ -461,7 +463,6 @@
               href="#"
               >Показать все</a
             >
-          </div>
         </li>
       </ul>
 
@@ -537,14 +538,13 @@
     </div>
 
     <section class="cooperation">
-      <address class="address add-secondary">
-        <strong class="address__welcome"
-          >приглашаем <br> к сотрудничеству дилеров!</strong
-        >
-        <p class="address__actual-address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
-      </address>
+      <h2 class="visually-hidden">Контакты</h2>
+        <address class="address add-secondary">
+          <strong class="address__welcome">приглашаем<br> к сотрудничеству дилеров!</strong>
+          <p class="address__actual-address">ул. Большая
+          Конюшенная, д. 19/8 <span class="cooperation__city">
+          Санкт-Петербург</span></p>
+        </address>
       <iframe class="cooperation__maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
           allowfullscreen
