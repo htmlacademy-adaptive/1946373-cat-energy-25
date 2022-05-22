@@ -47,17 +47,6 @@
   padding-top: 9px;
 }
 
-.buttons-list__vh::before {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 6px;
-  top: 3px;
-  left: 6px;
-  background-color: #68b738;
-  border-radius: 6px;
-}
-
 .buttons-list__bar {
   font-family: @main-font;
   font-size: 20px;
@@ -65,8 +54,6 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  // border-bottom: 1px solid #0505054f;
-  // border-style: dotted;
 }
 
 .buttons-list__vh {
@@ -76,6 +63,17 @@
   border: 1px solid #dcdcdc;
   border-radius: 6px;
   position: relative;
+}
+
+.buttons-list__vh::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 6px;
+  top: 3px;
+  left: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
 }
 
 @media (min-width: @tablet-width) {
@@ -99,6 +97,47 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 63px;
+  }
+
+  .buttons-list__bar {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #0505054f;
+    border-style: dotted;
+    margin-right: 23px;
+  }
+
+  .buttons-list__bar:last-child {
+    margin-left: 23px;
+  }
+
+  .buttons-list__vh {
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
+  .buttons-list__vh::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: 50%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+  }
+
+  .buttons-list__vh::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    left: 53%;
+    background-color: #68b738;
+    border-radius: 50%;
   }
 }
 
