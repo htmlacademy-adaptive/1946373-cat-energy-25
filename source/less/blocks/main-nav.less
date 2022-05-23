@@ -23,16 +23,21 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: @main-font;
+  font-family: @main-font, @accent-font, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: @black;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 29px;
+  padding-bottom: 20px;
   border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__item:last-child {
+  padding-top: 26px;
+  padding-bottom: 22px;
 }
 
 .main-nav__link {
@@ -49,6 +54,7 @@
     width: 100%;
     background-color: @white;
     left: 0;
+    z-index: 8;
   }
 
   .main-nav--closed .main-nav__list {
@@ -92,6 +98,12 @@
 
   .main-nav__item {
     border: none;
+    padding-top: 4px;
+    padding-left: 5px;
+  }
+
+  .main-nav__item:last-child {
+    padding-top: 6px;
   }
 }
 

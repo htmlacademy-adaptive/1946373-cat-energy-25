@@ -51,7 +51,7 @@
       </nav>
     </header>
 
-    <main class="main-form container">
+    <main class="main-form">
       <h1 class="main-form__check-program">Подбор программы</h1>
       <p class="main-form__info">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
@@ -109,18 +109,18 @@
             <ul class="catalog-filter-contacts__filter-list">
               <li class="catalog-filter-contacts__filter-item">
                 <label class="email" for="email">E-mail:*
-                <input class="email__input" type="email__input" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
+                <input class="email__input" type="email" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
               </li>
               <li class="catalog-filter-contacts__filter-item">
                 <label class="tel" for="phone-number__input">Телефон:*
-                <input class="phone-number__input" type="tel" id="phone-number" name="user_phone" value="8 (960) 900-60-90" required></label>
+                <input class="tel__phone-number__input" type="tel" id="phone-number__input" name="user_phone" value="8 (960) 900-60-90" required></label>
               </li>
             </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-comments">
           <label class="catalog-filter-comments__title" for="comments">Комментарий</label>
-          <textarea class="catalog-filter-comments__text" type="text" id="comments" name="tell-about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="catalog-filter-comments__text" id="comments" name="tell-about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="catalog-filter-more">
@@ -164,11 +164,12 @@
       </form>
     </main>
     <section class="cooperation add-secondary">
+      <h2 class="visually-hidden">Контакты</h2>
       <address class="address">
-        <strong class="address__welcome">приглашаем к сотрудничеству дилеров!</strong>
+        <strong class="address__welcome">приглашаем<br> к сотрудничеству дилеров!</strong>
         <p class="address__actual-address">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+        Конюшенная, д. 19/8 <span class="cooperation__city">
+        Санкт-Петербург</span></p>
       </address>
       <iframe class="cooperation__maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
@@ -179,25 +180,24 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-container">
       <a class="footer__logo logo">
-        <svg width="128" height="24" role="img" aria-labelledby="logo-cat-energy" focusable="false"
-          fill="#666">
+        <svg width="128" height="24" role="img" aria-labelledby="footer-logo2" focusable="false"
+        fill="currentColor">
           <title id="footer-logo2">Кэт энерджи</title>
           <use href="img/sprite.svg#footer-logo2"></use>
           </svg>
       </a>
       <div class="social-list">
         <a class="social-item" href="#">
-          <svg class="social-item__icon" width="28" height="22" role="img" aria-labelledby="logo-vk" focusable="false"
-          fill="#666">
-          <title id="logo-vk">Вконтакте</title>
+          <svg class="social-item__icon" width="28" height="22" role="img" aria-labelledby="vk" focusable="false"
+          fill="currentColor">
+          <title id="vk">Вконтакте</title>
           <use href="img/sprite.svg#vk"></use>
           </svg>
         </a>
         <a class="social-item" href="#">
           <svg class="social-item__icon" width="28" height="22" role="img" aria-labelledby="youtube" focusable="false"
-          >
+          fill="currentColor">
           <title id="youtube">Ютуб</title>
           <use href="img/sprite.svg#youtube"></use>
           </svg>
@@ -212,7 +212,7 @@
       </div>
       <div class="product-by">
         <a class="product-by__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="product-by__link" href="https://htmlacademy.ru/">
+        <a class="product-by__icon" href="https://htmlacademy.ru/">
           <svg class="product-by__icon" width="27" height="34" role="img" aria-labelledby="htmlacademy" focusable="false"
           fill="currentColor">
           <title id="htmlacademy">HTML Academy</title>
@@ -220,7 +220,7 @@
           </svg>
         </a>
       </div>
-    </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
