@@ -174,16 +174,22 @@
 
 
 @media (min-width: @desktop-width) {
+  .additional {
+    padding-left: 0;
+  }
+
   .additional::before {
     display: none;
   }
 
   .additional__title-main {
-    padding-bottom: 81px;
+    padding-bottom: 75px;
     margin-top: -23px;
     display: block;
     background-color: @white;
     z-index: 8;
+    padding-left: 16px;
+    padding-top: 0;
   }
 
   .additional__table {
@@ -192,8 +198,8 @@
 
 
   .additional__products {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-bottom: 1px solid #cdcdcd;
+    grid-template-columns: 324px 132px 156px 1fr;
   }
 
   .additional__products:last-child {
@@ -207,16 +213,34 @@
   .additional__title {
     padding-top: 25px;
     padding-bottom: 27px;
+    padding-left: 0;
   }
 
   .additional__table-characteristics,
   .additional__table-description {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+  }
+
+  .additional__table-characteristics {
+    padding: 0;
+    text-align: start;
+  }
+
+  .characteristics-water {
+    text-align: start;
+  }
+
+  .description-water {
+    text-align: end;
   }
 
   .additional__item__button {
-    padding: 13px 91px;
+    padding: 7px 91px;
+    margin-bottom: 8px;
+    margin-left: -11px;
+    margin-right: 0;
   }
 
   .additional__table-buy {

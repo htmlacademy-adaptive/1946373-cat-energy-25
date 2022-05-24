@@ -654,18 +654,32 @@
 
 @media (min-width: @desktop-width) {
   .main-form {
-    padding: 89px 110px;
+    padding: 70px 0;
     padding-bottom: 82px;
+  }
+
+  .main-form__check-program {
+    padding-left: 0;
   }
 
   .main-form__info {
     padding-top: 56px;
-    padding-bottom: 66px;
+    padding-bottom: 59px;
     padding-right: 830px;
+    padding-left: 0;
     margin: 0 auto;
     max-width: 1220px;
   }
 
+
+  .catalog-filter-form__filter-list {
+    padding-left: 0;
+  }
+
+
+  .catalog-filter-form__filter-item:not(:last-child) {
+    padding-bottom: 7px;
+  }
 
   .catalog-filter-form__counter,
   .catalog-filter-contacts__title {
@@ -679,9 +693,13 @@
   }
 
   .catalog-filter-form__meaning {
-    font-size: 16px;
-    line-height: 18px;
-    padding: 15px 13px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 22px;
+  }
+
+  .control-mark {
+    left: -7px;
   }
 
   .catalog-filter-form__filter-item {
@@ -702,7 +720,7 @@
 
   .catalog-filter-group {
     margin: 0;
-    padding: 30px 88px;
+    padding: 30px 16px;
     width: 570px;
   }
 
