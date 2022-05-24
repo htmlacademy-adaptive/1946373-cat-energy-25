@@ -38,7 +38,7 @@
 }
 
 .advantage__description {
-  font-family: @accent-font, @main-font, sans-serif;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -86,7 +86,7 @@
     width: 227px;
     height: 280px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 2px bottom 2px;
   }
 
   .advantage--tasty {
@@ -94,7 +94,7 @@
     width: 209px;
     height: 280px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 45px;
   }
 
   .advantage--fast {
@@ -102,19 +102,22 @@
     width: 245px;
     height: 280px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 50px;
   }
 
   .advantage:nth-child(2) {
     grid-template-columns: 227px;
+    width: 241px;
   }
 
   .advantage:nth-child(3) {
     grid-template-columns: 209px;
+    width: 237px;
   }
 
   .advantage:nth-child(4) {
     grid-template-columns: 245px;
+    width: 250px;
   }
 
   .advantage__image {
@@ -134,6 +137,7 @@
 @media (min-width: @desktop-width) {
   .advantages {
     padding-left: 110px;
+    padding-top: 29px;
   }
 
   .advantages__title {
@@ -145,7 +149,7 @@
 
   .advantages__list {
     padding: 0;
-    margin-top: 42px;
+    margin-top: 25px;
     gap: 78px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 69px;
@@ -173,11 +177,12 @@
   }
 
   .advantage__description {
-    font-family: @accent-font, @main-font, sans-serif;
+    font-family: @accent-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
     color: @arial;
+    margin-top: -78px;
   }
 }

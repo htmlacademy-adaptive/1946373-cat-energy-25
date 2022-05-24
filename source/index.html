@@ -8,6 +8,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="img/svg" sizes="32x32" href="./img/favicons/favicon32.svg">
     <link rel="icon" type="img/svg" sizes="152x152" href="./img/favicons/favicon152.svg">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="fonts" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="fonts" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -68,7 +70,7 @@
       <section class="main-programs container">
         <h2 class="visually-hidden">Доступные программы</h2>
 
-        <article class="program-card">
+        <article class="program-card card-slim">
           <h2 class="program-slogan program-card__image-slim">Похудение</h2>
           <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="catalog/slim" class="program-card__button">каталог slim</a>
@@ -157,15 +159,17 @@
         </picture>
       </div>
       </form>
-      <ul class="example__buttons buttons-list">
+      <ul class="example__buttons">
         <li class="example__list__item">
-          <button class="buttons-list__bar">Было</button>
+            <button class="buttons-list__bar">Было</button>
         </li>
         <li class="example__list__item">
-          <button class="buttons-list__vh"><span class="visually-hidden">Изменить</span></button>
+          <div class="buttons__list">
+            <button class="buttons-list__vh"><span class="visually-hidden">Изменить</span></button>
+          </div>
         </li>
         <li class="example__list__item">
-          <button class="buttons-list__bar">Стало</button>
+            <button class="buttons-list__bar">Стало</button>
         </li>
       </ul>
       </div>

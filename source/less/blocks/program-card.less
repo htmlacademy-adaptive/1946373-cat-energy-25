@@ -74,7 +74,7 @@
 }
 
 .program-card__description {
-  font-family: @accent-font, @main-font, sans-serif;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -211,19 +211,24 @@
   .program-card {
     padding-left: 52px;
     margin-bottom: 45px;
+    min-width: 570px;
+  }
+
+  .card-slim {
+    margin-left: 21px;
   }
 
   .program-slogan {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 214px;
+    padding-left: 162px;
     padding-top: 77px;
   }
 
   .program-card__image-slim::before {
     position: absolute;
-    top: 41px;
-    left: 67px;
+    top: 44px;
+    left: 15px;
     content: "";
     width: 70px;
     height: 93px;
@@ -235,7 +240,7 @@
   .program-card__image-slim::after {
     position: absolute;
     top: 47px;
-    left: 52px;
+    left: 0;
     content: "";
     width: 100px;
     height: 100px;
@@ -246,7 +251,7 @@
   .program-card__image-pro::before {
     position: absolute;
     top: 67px;
-    left: 32px;
+    left: -20px;
     content: "";
     width: 134px;
     height: 56px;
@@ -258,7 +263,7 @@
   .program-card__image-pro::after {
     position: absolute;
     top: 47px;
-    left: 52px;
+    left: 0;
     content: "";
     width: 100px;
     height: 100px;
@@ -271,6 +276,7 @@
     line-height: 24px;
     max-width: 467px;
     padding-top: 73px;
+    padding-bottom: 0;
   }
 
   .program-card__button {

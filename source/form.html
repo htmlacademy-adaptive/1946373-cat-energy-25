@@ -7,6 +7,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="img/svg" sizes="32x32" href="./img/favicons/favicon32.svg">
   <link rel="icon" type="img/svg" sizes="152x152" href="./img/favicons/favicon152.svg">
+  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="fonts" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswaldregular.woff2" as="fonts" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -136,8 +138,8 @@
             <li class="catalog-filter-more__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="product-group">
-                <span class="control__span"></span>
-                <span class="control__label">Питьевая вода</span>
+                <span class="control__span span-water"></span>
+                <span class="control__label label-water">Питьевая вода</span>
               </label>
             </li>
             <li class="catalog-filter-more__item">
@@ -150,8 +152,8 @@
             <li class="catalog-filter-more__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="product-group">
-                <span class="control__span"></span>
-                <span class="control__label">Витамины</span>
+                <span class="control__span span-vitamins"></span>
+                <span class="control__label label-vitamins">Витамины</span>
               </label>
             </li>
           </ul>
@@ -165,7 +167,7 @@
     </main>
     <section class="cooperation add-secondary">
       <h2 class="visually-hidden">Контакты</h2>
-      <address class="address">
+      <address class="address address-sec">
         <strong class="address__welcome">приглашаем<br> к сотрудничеству дилеров!</strong>
         <p class="address__actual-address">ул. Большая
         Конюшенная, д. 19/8 <span class="cooperation__city">
