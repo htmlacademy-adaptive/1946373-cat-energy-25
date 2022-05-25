@@ -47,7 +47,7 @@
   padding-top: 4px;
 }
 
-.buttons-list__bar {
+.example__buttons-list__bar {
   font-family: @main-font;
   font-size: 16px;
   line-height: 20px;
@@ -58,7 +58,7 @@
   padding-right: 18px;
 }
 
-.buttons__list {
+.example__buttons__list {
   width: 86px;
   height: 14px;
   background-color: @white;
@@ -67,7 +67,7 @@
   position: relative;
 }
 
-.buttons-list__vh {
+.example__buttons-list__vh {
   position: absolute;
   border: none;
 }
@@ -78,8 +78,9 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 45%, rgba(242, 242, 242, 1) 45%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 67%, rgba(242, 242, 242, 1) 45%);
     padding: 53px 0;
+    margin-bottom: 141px;
   }
 
   .example__changes-img {
@@ -93,26 +94,24 @@
     height: 511px;
     max-width: 592px;
     margin: 0 auto;
+    padding-top: 79px;
   }
 
   .fat-cat {
     clip: rect(auto, 276px, auto, auto);
     left: 21px;
-    margin-top: 44px;
   }
 
   .skinny-cat {
     display: block;
     clip: rect(auto, auto, auto, 270px,);
     left: 29px;
-    margin-top: 56px;
   }
 
   .example__buttons {
-    padding-top: 114px;
+    padding-top: 547px;
     padding-bottom: 4px;
     justify-content: start;
-    padding-left: 28px;
   }
 
   .example__title {
@@ -128,7 +127,7 @@
     padding-right: 30px;
   }
 
-  .buttons-list__bar {
+  .example__buttons-list__bar {
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px solid #0505054f;
@@ -136,12 +135,16 @@
     margin-right: 23px;
   }
 
-  .buttons-list__bar:last-child {
-    margin: -3px;
-    padding-left: 43px;
+
+  .example__buttons-list__bar:first-child {
+    padding-left: 0;
   }
 
-  .buttons__list {
+  .example__buttons-list__bar:last-child {
+    padding-left: 9px;
+  }
+
+  .example__buttons__list {
     width: 426px;
     height: 6px;
     background-color: #dcdcdc;
@@ -153,7 +156,7 @@
   }
 
 
-  .buttons-list__vh::before {
+  .example__buttons-list__vh::before {
     position: absolute;
     content: "";
     width: 34px;
@@ -165,7 +168,7 @@
     border: 1px solid #cdcdcd;
   }
 
-  .buttons-list__vh::after {
+  .example__buttons-list__vh::after {
     position: absolute;
     content: "";
     width: 8px;
@@ -179,9 +182,11 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(242, 242, 242, 1) 28%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(242, 242, 242, 1) 20%);
     padding-right: 117px;
     padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 70px;
   }
 
   .example__title {
@@ -194,13 +199,13 @@
   .example__discription {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 63px;
+    padding-top: 153px;
     grid-column: 1 / 2;
   }
 
   .example__changes {
     grid-column: 2;
-    margin-top: -320px;
+    margin-top: -433px;
   }
 
   .example__buttons {
@@ -209,7 +214,9 @@
 
   .example__desk {
     display: grid;
-    grid-template-columns: 436px 592px;
+    grid-template-columns: 461px 592px;
+    gap: 152px;
+    row-gap: 0;
   }
 
   .fat-cat {
@@ -219,4 +226,17 @@
   .skinny-cat {
     left: 43px;
   }
+
+  .example__buttons-list__bar:last-child {
+    padding-left: 20px;
+  }
+
+  .example__buttons-list__vh::before {
+    left: 185px;
+  }
+
+  .example__buttons-list__vh::after {
+    left: 200px;
+  }
 }
+
