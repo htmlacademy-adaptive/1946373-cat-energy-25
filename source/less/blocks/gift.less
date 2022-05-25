@@ -25,13 +25,16 @@
   display: block;
   align-content: center;
   margin: 0;
+  width: 164px;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
     background-image: url("../img/icon_gift.svg"), url("../img/gift-tablet.png");
-    background-position: top 57px left 77px, center;
+    background-position: top 57px left 90px, center;
     position: relative;
+    padding-bottom: 13px;
+    margin-bottom: 78px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/icon_gift.svg"), url("../img/gift-tablet@2x.png");
@@ -40,11 +43,12 @@
   }
 
   .gift__info {
-    padding-left: 422px;
     padding-top: 71px;
     position: absolute;
-    top: -5px;
-    right: 154px;
+    top: 0;
+    right: 135px;
+    width: 161px;
+    text-align: left;
   }
 }
 
@@ -56,6 +60,7 @@
     margin-bottom: 86px;
     min-width: 245px;
     min-height: 289px;
+    margin-left: 59px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/icon_gift.svg"), url("../img/gift-desktop@2x.png");
@@ -66,7 +71,7 @@
   .gift__info {
     padding-left: 3px;
     padding-top: 0;
-    top: 148px;
+    top: 194px;
     left: 42px;
     right: 53px;
   }
