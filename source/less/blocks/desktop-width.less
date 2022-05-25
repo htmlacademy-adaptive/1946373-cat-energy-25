@@ -5,5 +5,16 @@
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
+    padding-left: 98px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #68b738;
+      z-index: 1;
+      right: 0;
+    }
   }
 }

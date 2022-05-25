@@ -3,14 +3,14 @@
 
 .additional {
   padding: 25px 20px;
-  padding-top: 25px;
+  padding-top: 0;
   position: relative;
 }
 
 .additional::before {
   content: "";
   position: absolute;
-  top: 6%;
+  top: 3%;
   height: 2px;
   width: 100%;
   background-color: #68b738;
@@ -19,7 +19,7 @@
 }
 
 .additional__title-main {
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -45,7 +45,7 @@
 
 .additional__table-characteristics,
 .additional__table-description {
-  font-family: @accent-font, @main-font;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -87,27 +87,29 @@
 @media (min-width: @tablet-width) {
   .additional {
     padding-top: 0;
-    padding-bottom: 104px;
+    padding-bottom: 68px;
   }
 
   .additional::before {
-    top: 3%;
+    top: 4%;
   }
 
   .additional__title-main {
     font-size: 36px;
     line-height: 36px;
     left: 0;
+    padding-top: 6px;
+    padding-left: 46px;
+    padding-bottom: 78px;
   }
 
   .additional__products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 25px;
-    column-gap: 49px;
     align-items: baseline;
     align-content: center;
     border-top: none;
+    grid-template-columns: 246px 376px 84px;
+    min-width: 708px;
   }
 
   .additional__products:not(:last-child) {
@@ -116,10 +118,12 @@
 
   .additional__table-characteristics {
     grid-column: 2/3;
+    padding-left: 195px;
   }
 
   .additional__table {
     border: 1px solid #cdcdcd;
+    margin-left: 10px;
   }
 
   .additional__products:last-child {
@@ -138,9 +142,15 @@
   }
 
   .additional__item__button {
-    padding: 7px 220px;
-    margin: 0 auto;
-    margin-bottom: 28px;
+    padding: 7px 283px;
+    margin: 0 38px;
+    grid-column: 1/-1;
+    margin-top: 10px;
+    margin-bottom: 27px;
+  }
+
+  .additional__table-description {
+    padding-left: 2px;
   }
 
   .additional__table-characteristics,
@@ -149,15 +159,37 @@
     line-height: 20px;
   }
 
-  .additional__table-characteristics:first-child {
-    padding-left: 244px;
+  .characteristics-water {
+    padding-left: 261px;
+  }
+
+  .characteristics-milk {
+    padding-left: 278px;
+  }
+
+  .characteristics-vitamins {
+    padding-left: 203px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .additional {
+    padding-left: 0;
+  }
+
+  .additional::before {
+    display: none;
+  }
+
   .additional__title-main {
-    padding-bottom: 81px;
+    padding-bottom: 75px;
+    margin-top: -23px;
+    display: block;
+    background-color: @white;
+    z-index: 8;
+    padding-left: 16px;
+    padding-top: 0;
   }
 
   .additional__table {
@@ -166,8 +198,8 @@
 
 
   .additional__products {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-bottom: 1px solid #cdcdcd;
+    grid-template-columns: 324px 132px 156px 1fr;
   }
 
   .additional__products:last-child {
@@ -181,16 +213,34 @@
   .additional__title {
     padding-top: 25px;
     padding-bottom: 27px;
+    padding-left: 0;
   }
 
   .additional__table-characteristics,
   .additional__table-description {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+  }
+
+  .additional__table-characteristics {
+    padding: 0;
+    text-align: start;
+  }
+
+  .characteristics-water {
+    text-align: start;
+  }
+
+  .description-water {
+    text-align: end;
   }
 
   .additional__item__button {
-    padding: 13px 91px;
+    padding: 7px 91px;
+    margin-bottom: 8px;
+    margin-left: -11px;
+    margin-right: 0;
   }
 
   .additional__table-buy {

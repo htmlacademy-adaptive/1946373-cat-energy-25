@@ -6,7 +6,6 @@
   grid-template-columns: repeat(2, 139px);
   padding: 26px 20px;
   align-items: center;
-  margin-top: 40px;
   padding-top: 11px;
 }
 
@@ -18,8 +17,12 @@
   background-color: #f2f2f2;
 }
 
+.welcome-secondary {
+  padding-top: 12px;
+}
+
 .address__welcome {
-  font-family: @main-font, @accent-font, sans-serif;
+  font-family: @main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -28,7 +31,7 @@
 }
 
 .address__actual-address {
-  font-family: @accent-font, @main-font, sans-serif;
+  font-family: @accent-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -46,6 +49,10 @@
     justify-content: space-between;
   }
 
+  .address-sec {
+    padding-top: 45px;
+  }
+
   .add-secondary {
     margin: 0;
   }
@@ -58,6 +65,8 @@
   .address__actual-address {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+    margin-top: 10px;
   }
 }
 
@@ -67,11 +76,16 @@
     background: @white;
     z-index: 4;
     display: grid;
-    grid-template-columns: repeat(2, 139px);
-    margin-top: 95px;
-    margin-left: 110px;
+    grid-template-columns: repeat(2, 159px);
+    margin-top: 88px;
+    margin-left: 111px;
+    padding-left: 81px;
     align-items: center;
     gap: 87px;
     justify-content: inherit;
+  }
+
+  .address__actual-address {
+    text-align: start;
   }
 }

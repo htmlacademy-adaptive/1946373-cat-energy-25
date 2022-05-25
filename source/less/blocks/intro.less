@@ -114,24 +114,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  // .intro {
-  //   position: relative;
-  //   background-position: right;
-  //   background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop.jpg");
-  //   background-repeat: no-repeat;
-  //   background-color: @white;
-  //   background-size: 50%;
-  //   color: #ffffff;
-  //   display: grid;
-  //   flex-direction: column;
-  //   padding-left: 190px;
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop2@2x.jpg");
-  //     background-size: 720px auto;
-  //   }
-  // }
-
   .intro {
     background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop.jpg");
     background-position: 100%;
@@ -139,20 +121,12 @@
     inset: 0 0 auto auto;
     width: 50%;
     position: relative;
-    left: 17%;
+    left: 25%;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop2@2x.jpg");
     }
   }
-
-  // .intro::after {
-  //   background-position: 50%;
-  //   background-size: cover;
-  //   content: "";
-  //   position: absolute;
-  //   z-index: -1;
-  // }
 
   .intro__title {
     font-size: 60px;
@@ -166,6 +140,7 @@
     text-align: start;
     position: relative;
     left: -468px;
+    margin-left: -60px;
   }
 
   .intro__subtitle {
@@ -175,15 +150,17 @@
     display: flex;
     align-items: start;
     padding-left: 0;
-    padding-bottom: 270px;
+    padding-bottom: 290px;
     position: relative;
     left: -468px;
+    margin-left: -60px;
+    padding-top: 0;
   }
 
   .intro__image {
     position: absolute;
-    left: -172px;
-    top: 189px;
+    left: -190px;
+    top: 152px;
     width: 552px;
     height: 499px;
   }
@@ -191,7 +168,7 @@
 
   .intro__cta {
     margin: 0 20px;
-    top: 478px;
-    left: -468px;
+    top: 455px;
+    left: -549px;
   }
 }
