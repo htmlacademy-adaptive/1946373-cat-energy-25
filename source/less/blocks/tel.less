@@ -1,0 +1,75 @@
+.tel {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @arial;
+}
+
+.tel__phone-number__input {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 1px solid @grey;
+  box-sizing: border-box;
+  padding: 15px 13px;
+  position: relative;
+  background-image: url("../img/telephone.svg");
+  background-size: 20px 19px;
+  background-position: center right 7px;
+  background-repeat: no-repeat;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-left: 16px;
+  margin-left: 5px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+    background-image: url("../img/telephone-focus.svg");
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+    background-image: url("../img/telephone-error.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tel {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 14px;
+  }
+
+  .tel__phone-number__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 21px;
+    min-width: 519px;
+    background-position: center right -3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tel {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 14px;
+  }
+
+  .tel__phone-number__input {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 30px;
+    min-width: 472px;
+  }
+}

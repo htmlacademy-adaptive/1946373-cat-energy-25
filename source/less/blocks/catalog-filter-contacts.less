@@ -1,0 +1,121 @@
+
+.catalog-filter-contacts__title {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: @black;
+  padding-top: 29px;
+  text-transform: inherit;
+  padding-left: 20px;
+  width: 218px;
+  position: relative;
+  background-color: @white;
+}
+
+.catalog-filter-contacts {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.catalog-filter-contacts::before {
+  content: "";
+  position: absolute;
+  top: -26%;
+  height: 2px;
+  width: 100%;
+  background-color: #68b738;
+  z-index: -1;
+  right: 0;
+}
+
+.catalog-filter-contacts__filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 32px;
+  max-width: 1220px;
+}
+
+.catalog-filter-contacts__filter-item {
+  padding-left: 20px;
+}
+
+.catalog-filter-contacts__filter-item:first-child {
+  padding-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-filter-contacts::before {
+    top: -11%;
+  }
+
+  .catalog-filter-contacts__title {
+    font-size: 36px;
+    line-height: 36px;
+    min-width: 534px;
+    display: block;
+    margin-left: 20px;
+    padding-right: 35px;
+    padding-left: 51px;
+    width: fit-content;
+  }
+
+  .catalog-filter-contacts__filter-list {
+    padding-top: 68px;
+  }
+
+  .catalog-filter-contacts__filter-item {
+    padding-left: 70px;
+  }
+
+  .catalog-filter-contacts__filter-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .catalog-filter-contacts {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-filter-contacts__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 0;
+    padding-top: 42px;
+    padding-left: 34px;
+    position: relative;
+    left: 39px;
+    margin-left: 35px;
+  }
+
+  .catalog-filter-contacts__filter-item {
+    padding: 0;
+  }
+
+  .catalog-filter-contacts__filter-list {
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-filter-contacts__filter-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .catalog-filter-contacts {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .catalog-filter-contacts::before {
+    top: -9%;
+  }
+}
