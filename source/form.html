@@ -15,14 +15,14 @@
   <body class="page__body">
     <header class="main-header container">
       <div class="main-header__info">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo-img" src="img/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи">
         </picture>
       </a>
-      <a class="main-header__logo" tabindex="-1">
+      <a class="main-header__logo" tabindex="-1" href="https://htmlacademy.ru/intensive/adaptive">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-slogan-desctop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-slogan-tablet.svg">
@@ -64,15 +64,15 @@
         <ul class="catalog-filter-form__filter-list">
           <li class="catalog-filter-form__filter-item">
             <label class="catalog-filter-form__counter" for="name">Имя:*
-            <input class="catalog-filter-form__meaning meaning-name" type="text" id="name" name="user_name" placeholder="Барсик" required></label>
+            <input class="catalog-filter-form__meaning catalog-filter-form__meaning-name" type="text" id="name" name="user_name" placeholder="Барсик" required></label>
           </li>
           <li class="catalog-filter-form__filter-item">
             <label class="catalog-filter-form__counter" for="weight">Вес (кг):*
-            <input class="catalog-filter-form__meaning meaning-weight" type="number" id="weight" name="user_weight" placeholder="7" required></label>
+            <input class="catalog-filter-form__meaning catalog-filter-form__meaning-weight" type="number" id="weight" name="user_weight" placeholder="7" required></label>
           </li>
           <li class="catalog-filter-form__filter-item">
             <label class="catalog-filter-form__counter" for="age">Возраст (лет):
-            <input class="catalog-filter-form__meaning meaning-age" type="number" id="age" name="user_age" placeholder="7"></label>
+            <input class="catalog-filter-form__meaning catalog-filter-form__meaning-age" type="number" id="age" name="user_age" placeholder="7"></label>
           </li>
         </ul>
         </fieldset>
@@ -84,21 +84,21 @@
             <label class="control">
               <input class="control__input visually-hidden" type="radio" name="aim" value="Похудение" checked>
               <span class="control-mark"></span>
-              <span class="control__label">Похудение</span>
+              <span class="control__label control__check">Похудение</span>
             </label>
           </li>
           <li class="catalog-filter-group__item">
             <label class="control">
               <input class="control__input visually-hidden" type="radio" name="aim" value="Набор массы">
               <span class="control-mark"></span>
-              <span class="control__label">Набор массы</span>
+              <span class="control__label control__check">Набор массы</span>
             </label>
           </li>
           <li class="catalog-filter-group__item">
             <label class="control">
               <input class="control__input visually-hidden" type="radio" name="aim" value="Не знаю (Нужен ваш совет)">
               <span class="control-mark"></span>
-              <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              <span class="control__label control__check">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -111,11 +111,11 @@
             <ul class="catalog-filter-contacts__filter-list">
               <li class="catalog-filter-contacts__filter-item">
                 <label class="email" for="email">E-mail:*
-                <input class="email__input" type="email" id="email" name="user_mail" value="kuklachev@gmail.com" required></label>
+                <input class="email__input" type="email" id="email" name="user_mail" placeholder="kuklachev@gmail.com" required></label>
               </li>
               <li class="catalog-filter-contacts__filter-item">
                 <label class="tel" for="phone-number__input">Телефон:*
-                <input class="tel__phone-number__input" type="tel" id="phone-number__input" name="user_phone" value="8 (960) 900-60-90" required></label>
+                <input class="tel__phone-number__input" type="tel" id="phone-number__input" name="user_phone" placeholder="8 (960) 900-60-90" required></label>
               </li>
             </ul>
         </fieldset>
@@ -138,22 +138,22 @@
             <li class="catalog-filter-more__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="product-group">
-                <span class="control__span span-water"></span>
-                <span class="control__label label-water">Питьевая вода</span>
+                <span class="control__span control__span-water"></span>
+                <span class="control__label control__label-water">Питьевая вода</span>
               </label>
             </li>
             <li class="catalog-filter-more__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="product-group">
-                <span class="control__span span-milk"></span>
-                <span class="control__label">Молоко</span>
+                <span class="control__span control__span-milk"></span>
+                <span class="control__label control__label-milk">Молоко</span>
               </label>
             </li>
             <li class="catalog-filter-more__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="product-group">
-                <span class="control__span span-vitamins"></span>
-                <span class="control__label label-vitamins">Витамины</span>
+                <span class="control__span control__span-vitamins"></span>
+                <span class="control__label control__label-vitamins">Витамины</span>
               </label>
             </li>
           </ul>

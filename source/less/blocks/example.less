@@ -72,7 +72,17 @@
   border: none;
 }
 
-.skinny-cat {
+.example__buttons-list__vh::after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 6px;
+  top: 3px;
+  background-color: #68b738;
+  border-radius: 6px;
+}
+
+.example__skinny-cat {
   display: none;
 }
 
@@ -97,12 +107,12 @@
     padding-top: 79px;
   }
 
-  .fat-cat {
+  .example__fat-cat {
     clip: rect(auto, 276px, auto, auto);
     left: 21px;
   }
 
-  .skinny-cat {
+  .example__skinny-cat {
     display: block;
     clip: rect(auto, auto, auto, 270px,);
     left: 29px;
@@ -133,6 +143,10 @@
     border-bottom: 1px solid #0505054f;
     border-style: dotted;
     margin-right: 23px;
+
+    &:hover {
+      border-bottom: 1px solid #050505a2;
+    }
   }
 
 
@@ -155,14 +169,13 @@
     padding-top: 12px;
   }
 
-
-  .example__buttons-list__vh::before {
-    position: absolute;
+  .example__buttons-list__vh {
+    position: relative;
     content: "";
     width: 34px;
     height: 34px;
     top: -15px;
-    left: 206px;
+    left: 187px;
     background-color: #ffffff;
     border-radius: 50%;
     border: 1px solid #cdcdcd;
@@ -173,10 +186,19 @@
     content: "";
     width: 8px;
     height: 8px;
-    top: -2px;
-    left: 220px;
+    top: 12px;
+    left: 12px;
     background-color: #68b738;
     border-radius: 50%;
+  }
+
+  .example__buttons-list__vh:hover {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+  }
+
+  .example__buttons-list__vh:active {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+    border: 1px solid #68b738;
   }
 }
 
@@ -210,6 +232,7 @@
 
   .example__buttons {
     grid-column: 2;
+    padding-left: 29px;
   }
 
   .example__desk {
@@ -219,23 +242,28 @@
     row-gap: 0;
   }
 
-  .fat-cat {
+  .example__fat-cat {
     left: 37px;
   }
 
-  .skinny-cat {
+  .example__skinny-cat {
     left: 43px;
   }
 
   .example__buttons-list__bar:last-child {
-    padding-left: 20px;
+    padding: 0;
   }
 
-  .example__buttons-list__vh::before {
-    left: 185px;
+  .example__buttons-list__bar-after {
+    margin-left: 24px;
   }
 
   .example__buttons-list__vh::after {
-    left: 200px;
+    left: 12px;
+  }
+
+  .example__buttons-list__vh {
+    top: -17px;
+    left: 196px;
   }
 }
