@@ -12,4 +12,3 @@ navToggle.addEventListener('click', function () {
   navToggle.classList.toggle('main-header__toggle--opened');
   navToggle.classList.toggle('main-header__toggle--closed');
 });
-

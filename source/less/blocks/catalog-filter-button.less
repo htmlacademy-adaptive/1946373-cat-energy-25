@@ -1,0 +1,43 @@
+.catalog-filter-button__cost {
+  margin: 0 20px;
+  margin-top: 41px;
+  margin-right: 20px;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-filter-button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 20px;
+    display: flex;
+    gap: 45px;
+    padding-left: 50px;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+
+  .catalog-filter-button__cost {
+    padding: 17px 44px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-filter-button {
+    padding-top: 69px;
+    display: flex;
+    gap: 81px;
+    padding-left: 0;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .catalog-filter-button__cost {
+    font-size: 20px;
+    line-height: 1;
+    padding: 13px 188px;
+    width: 568px;
+    height: 52px;
+    margin: 0;
+  }
+}

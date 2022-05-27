@@ -51,11 +51,17 @@
 
 @media (max-width: @mobile-width-only) {
   .main-nav {
-    position: absolute;
     width: 100%;
     background-color: @white;
     left: 0;
     z-index: 8;
+    position: absolute;
+  }
+
+
+  .main-nav--closed {
+    display: block;
+    position: absolute;
   }
 
   .main-nav--closed .main-nav__list {
@@ -106,13 +112,20 @@
   .main-nav__item:last-child {
     padding-top: 6px;
   }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 33px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__link {
     color: @black;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    flex-wrap: wrap;
   }
 
   .main-nav__link--active {
@@ -139,5 +152,8 @@
   .main-nav__link--current {
     position: relative;
   }
-}
 
+  .main-nav__list {
+    gap: 27px;
+  }
+}
