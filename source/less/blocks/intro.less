@@ -11,7 +11,7 @@
   background-size: 100%;
   color: #ffffff;
   max-width: 1440px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
 
   @media (max-width: @mobile-width-only) {
@@ -73,7 +73,7 @@
     font-size: 60px;
     line-height: 1;
     padding-top: 51px;
-    padding-left: 117px;
+    padding-left: 90px;
     padding-bottom: 16px;
     padding-right: 195px;
     margin: 0;
@@ -85,7 +85,8 @@
     font-size: 20px;
     line-height: 20px;
     color: @black;
-    padding-left: 119px;
+    padding-left: 89px;
+    text-align: start;
   }
 
   .intro__image {
@@ -95,7 +96,7 @@
     width: 709px;
     height: 609px;
     margin-top: -9px;
-    margin-left: 27px;
+    margin-left: 0;
     position: absolute;
     z-index: 1;
   }
@@ -107,10 +108,10 @@
     font-size: 20px;
     line-height: 20px;
     padding: 18px 27px;
-    margin: 0;
-    margin-left: 120px;
-    margin-bottom: 526px;
+    margin: 19px 0 526px 89px;
     z-index: 4;
+    position: relative;
+    width: 244px;
   }
 }
 
@@ -118,49 +119,50 @@
   .intro {
     background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop.jpg");
     background-position: 100%;
-    height: 100%;
-    inset: 0 0 auto auto;
-    width: 50%;
-    position: relative;
-    left: 25%;
+    background-size: 50% 100%, 50% auto;
+    height: 694px;
+    padding-top: 223px;
+    max-width: auto;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to bottom, fade(@accent, 85%) 720px, #ffffff 720px), url("../img/index-background-wrapper-desctop2@2x.jpg");
     }
   }
 
+  .intro__wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0 247px;
+  }
+
   .intro__title {
     font-size: 60px;
-    line-height: 60px;
-    padding-top: 223px;
+    line-height: 1;
+    padding-top: 0;
     padding-left: 0;
     padding-bottom: 40px;
     margin: 0;
     color: @black;
     width: 611px;
     text-align: start;
-    position: relative;
-    left: -468px;
     margin-left: -60px;
   }
 
   .intro__subtitle {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     color: @black;
     display: flex;
     align-items: start;
     padding-left: 0;
-    padding-bottom: 290px;
-    position: relative;
-    left: -468px;
     margin-left: -60px;
     padding-top: 0;
+    padding-bottom: 51px;
   }
 
   .intro__image {
     position: absolute;
-    left: -190px;
+    left: calc(50% - 163px);
     top: 152px;
     width: 552px;
     height: 499px;
@@ -168,8 +170,8 @@
 
 
   .intro__cta {
-    margin: 0 20px;
-    top: 455px;
-    left: -549px;
+    margin: 0;
+    width: 244px;
+    margin-left: -55px;
   }
 }

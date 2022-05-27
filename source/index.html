@@ -55,6 +55,7 @@
     <main class="main-container">
 
         <section class="intro">
+          <div class="intro__wrapper container">
             <h1 class="intro__title">Функциональное питание для котов</h1>
             <strong class="intro__subtitle">Занялся собой? Займись котом!</strong>
             <picture>
@@ -65,6 +66,7 @@
             <img class="intro__image" src="img/feed-packaging.png" width="280" height="270" alt="Корм с курицей">
             </picture>
               <a href="form.html" class="intro__cta button">Подобрать программу</a>
+          </div>
         </section>
 
       <section class="main-programs container">
@@ -135,8 +137,8 @@
           <dd class="specs__value">5 кг</dd>
         </div>
 
-        <div class="specs-card">
-          <dt class="specs__title">затрачено времени</dt>
+        <div class="specs-card specs-card__secondary">
+          <dt class="specs__title specs__title__secondary">затрачено времени</dt>
           <dd class="specs__value specs__value-sec">60 дней</dd>
         </div>
 
@@ -168,7 +170,7 @@
           </div>
         </li>
         <li class="example__list__item">
-            <button class="example__buttons-list__bar">Стало</button>
+            <button class="example__buttons-list__bar example__buttons-list__bar-after">Стало</button>
         </li>
       </ul>
       </form>
@@ -178,7 +180,7 @@
 
     <section class="cooperation">
       <h2 class="visually-hidden">Контакты</h2>
-      <address class="address">
+      <address class="address address__index">
         <strong class="address__welcome">приглашаем <br> к сотрудничеству дилеров!</strong>
         <p class="address__actual-address">ул. Большая
         Конюшенная, д. 19/8 <span class="cooperation__city">
@@ -192,7 +194,7 @@
           Санкт-Петербург"></iframe>
     </section>
 
-    <footer class="footer">
+    <footer class="footer footer-index">
       <a class="footer__logo logo">
         <svg width="128" height="24" role="img" aria-labelledby="footer-logo2" focusable="false"
         fill="currentColor">
