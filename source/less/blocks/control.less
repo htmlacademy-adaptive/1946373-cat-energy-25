@@ -21,7 +21,6 @@
   border-radius: 50%;
 }
 
-
 .control:hover .control__input[type="radio"]:not(:disabled) .control-mark {
   border: 1px solid #bababa;
 }
@@ -31,6 +30,11 @@
 }
 
 .control__input[type="radio"]:focus ~ .control-mark {
+  border: 1px solid #444444;
+  color: #68b738;
+}
+
+.control__input[type="checkbox"]:focus ~ .control__span {
   border: 1px solid #444444;
   color: #68b738;
 }
