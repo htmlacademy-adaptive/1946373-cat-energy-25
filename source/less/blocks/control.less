@@ -13,16 +13,26 @@
   outline: none;
 }
 
+.control__input:disabled + .control-mark {
+  opacity: 0.3;
+}
+
 .control__input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 
-.control__input[type="radio"]:hover + .control-mark:hover {
+
+.control:hover .control__input[type="radio"]:not(:disabled) .control-mark {
   border: 1px solid #bababa;
 }
 
-.control__input:disabled + .control-mark + .control__label {
+.control__input:disabled ~ .control__label {
   opacity: 0.3;
+}
+
+.control__input[type="radio"]:focus ~ .control-mark {
+  border: 1px solid #444444;
+  color: #68b738;
 }
 
 .control__input[type="radio"]:checked + .control-mark::before {
@@ -45,14 +55,6 @@
   text-transform: uppercase;
   color: @title;
   padding-left: 46px;
-
-  &:disabled {
-    opacity: 0.3;
-  }
-}
-
-.control__label:active {
-  opacity: 0.3;
 }
 
 .control__span {
