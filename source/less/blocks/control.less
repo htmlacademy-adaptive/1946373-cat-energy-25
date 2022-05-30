@@ -11,19 +11,18 @@
   height: 30px;
   background: #ffffff;
   outline: none;
-  border-radius: 50%;
-
-  &:hover {
-    border: 1px solid #bababa;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
 
-.control-mark:active {
-  background: rgba(255, 255, 255, 0.3);
+.control__input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:hover + .control-mark:hover {
+  border: 1px solid #bababa;
+}
+
+.control__input:disabled + .control-mark + .control__label {
+  opacity: 0.3;
 }
 
 .control__input[type="radio"]:checked + .control-mark::before {
