@@ -30,7 +30,8 @@
 .main-catalog__product-card {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 141px 161px;
+  width: 100%;
+  grid-template-columns: auto 1fr;
   padding-top: 15px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -43,7 +44,7 @@
 .main-catalog__product-card-last {
   grid-template-columns: 279px;
   padding-top: 26px;
-  padding-right: 15px;
+  padding-right: 0;
 }
 
 .main-catalog__table {
@@ -76,7 +77,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 37px;
+  margin-left: 55px;
+  margin-right: 18px;
+}
+
+.main-catalog__product-img-second {
+  margin-left: 48px;
+  margin-right: 11px;
 }
 
 .main-catalog__product-card-small {
@@ -123,6 +130,9 @@
 .main-catalog__more-food {
   display: grid;
   justify-items: center;
+  width: 100%;
+  grid-template-columns: 1fr;
+  margin-left: 20px;
 }
 
 .main-catalog__more-plus {
@@ -131,7 +141,8 @@
   width: 30px;
   background-repeat: no-repeat;
   position: relative;
-  left: 18px;
+  left: 0;
+  top: -5px;
 }
 
 .main-catalog__more-products {
@@ -147,7 +158,7 @@
 }
 
 .main-catalog__products-last {
-  padding-left: 40px;
+  padding-left: 3px;
   padding-top: 18px;
 }
 
@@ -164,16 +175,16 @@
 }
 
 .main-catalog__discription-last {
-  padding-left: 39px;
+  padding-left: 14px;
   padding-bottom: 21px;
 }
 
 .main-catalog__more-products-button {
   display: inline-block;
-  width: 279px;
-  margin-left: 40px;
+  // width: 279px;
   margin-bottom: 25px;
   padding: 10px 79px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -371,7 +382,7 @@
     row-gap: 145px;
     margin: 0 auto;
     max-width: 1220px;
-    margin-left: 42px;
+    padding-left: 42px;
   }
 
   .main-catalog__button {
@@ -436,7 +447,7 @@
     font-size: 16px;
     line-height: 1px;
     padding: 20px 39px;
-    margin-right: 43px;
+    margin-right: 0;
     width: 169px;
     margin-top: 56px;
     margin-bottom: 32px;

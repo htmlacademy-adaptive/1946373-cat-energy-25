@@ -1,10 +1,6 @@
 .control {
   position: relative;
   display: block;
-
-  &:focus {
-    opacity: 0.3;
-  }
 }
 
 .control-mark {
@@ -16,6 +12,14 @@
   background: #ffffff;
   outline: none;
   border-radius: 50%;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .control-mark:active {
@@ -42,6 +46,10 @@
   text-transform: uppercase;
   color: @title;
   padding-left: 46px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .control__label:active {
@@ -58,8 +66,8 @@
 .control__input[type="checkbox"]:checked + .control__span::before {
   position: absolute;
   content: "";
-  top: 8px;
-  left: 7px;
+  top: 2px;
+  left: 4px;
   width: 18px;
   height: 20px;
   background-image: url("../img/selected.svg");
@@ -80,6 +88,11 @@
     width: 18px;
     height: 18px;
     top: 10px;
+    left: 10px;
+  }
+
+  .control__input[type="checkbox"]:checked + .control__span::before {
+    top: 7px;
     left: 10px;
   }
 
@@ -105,6 +118,11 @@
 @media (min-width: @desktop-width) {
   .control-mark {
     left: -7px;
+  }
+
+  .control__input[type="checkbox"]:checked + .control__span::before {
+    top: 7px;
+    left: 9px;
   }
 
   .control__check {

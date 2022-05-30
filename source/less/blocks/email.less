@@ -6,6 +6,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @arial;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: auto 1fr;
 }
 
 .email__input {
@@ -47,14 +51,21 @@
     font-size: 20px;
     line-height: 30px;
     padding-right: 18px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: auto 1fr;
   }
 
   .email__input {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 27px;
+    padding: 10px 20px;
     min-width: 536px;
-    background-position: center right -2px;
+    width: 95%;
+    background-position: center right 18px;
+    margin-left: 21px;
+    margin-right: 27px;
   }
 }
 
@@ -63,13 +74,15 @@
     font-size: 20px;
     line-height: 30px;
     padding-right: 18px;
+    grid-template-columns: 63px 1fr;
   }
 
   .email__input {
     min-width: 486px;
-    background-position: center right 8px;
+    background-position: center right 1px;
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 30px;
+    padding: 10px 37px;
+    margin: 0;
   }
 }
