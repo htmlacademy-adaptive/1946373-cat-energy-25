@@ -24,16 +24,17 @@
   color: @white;
   display: block;
   align-content: center;
-  margin: 0;
+  margin: 0 auto;
   width: 164px;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
     background-image: url("../img/icon_gift.svg"), url("../img/gift-tablet.png");
-    background-position: top 57px left 90px, center;
+    background-position: top 57px left 81px, center;
     position: relative;
     padding-bottom: 13px;
+    margin: 0 30px;
     margin-bottom: 78px;
 
     @media (min-resolution: 2dppx) {
@@ -69,10 +70,11 @@
   }
 
   .gift__info {
-    padding-left: 3px;
+    padding-left: 0;
     padding-top: 0;
-    top: 194px;
+    top: 187px;
     left: 42px;
     right: 53px;
+    text-align: center;
   }
 }

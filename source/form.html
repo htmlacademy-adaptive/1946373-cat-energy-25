@@ -81,22 +81,22 @@
         <legend class="visually-hidden">Цель</legend>
         <ul class="catalog-filter-group__list">
           <li class="catalog-filter-group__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="aim" value="Похудение" checked>
+            <label class="control" for="slim">
+              <input class="control__input visually-hidden" type="radio" id="slim" name="aim" checked>
               <span class="control-mark"></span>
               <span class="control__label control__check">Похудение</span>
             </label>
           </li>
           <li class="catalog-filter-group__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="aim" value="Набор массы">
+            <label class="control" for="pro">
+              <input class="control__input visually-hidden" id="pro" type="radio" name="aim">
               <span class="control-mark"></span>
               <span class="control__label control__check">Набор массы</span>
             </label>
           </li>
           <li class="catalog-filter-group__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="radio" name="aim" value="Не знаю (Нужен ваш совет)">
+            <label class="control" for="don't-know">
+              <input class="control__input visually-hidden" type="radio" id="don't-know" name="aim">
               <span class="control-mark"></span>
               <span class="control__label control__check">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -167,7 +167,7 @@
     </main>
     <section class="cooperation add-secondary">
       <h2 class="visually-hidden">Контакты</h2>
-      <address class="address address-sec">
+      <address class="address address-sec address__form">
         <strong class="address__welcome add-form">приглашаем<br> к сотрудничеству дилеров!</strong>
         <p class="address__actual-address">ул. Большая
         Конюшенная, д. 19/8 <span class="cooperation__city">
@@ -181,7 +181,7 @@
           Санкт-Петербург"></iframe>
     </section>
 
-    <footer class="footer">
+    <footer class="footer footer__form">
       <a class="footer__logo logo">
         <svg width="128" height="24" role="img" aria-labelledby="footer-logo2" focusable="false"
         fill="currentColor">
@@ -213,8 +213,8 @@
         </a>
       </div>
       <div class="product-by">
-        <a class="product-by__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="product-by__icon" href="https://htmlacademy.ru/">
+        <a class="product-by__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="product-by__icon" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="product-by__icon" width="27" height="34" role="img" aria-labelledby="htmlacademy" focusable="false"
           fill="currentColor">
           <title id="htmlacademy">HTML Academy</title>
